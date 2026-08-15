@@ -22,6 +22,8 @@
   :focus-visible { outline: 2px solid #FC6620; outline-offset: 2px; }
   .bds-why-card { transition: transform 0.25s ease, box-shadow 0.25s ease; }
   .bds-why-card:hover { transform: translateY(-6px); box-shadow: 0 14px 30px rgba(17,18,24,0.08); }
+  .bds-service-card { transition: transform 0.25s ease, box-shadow 0.25s ease; }
+  .bds-service-card:hover { transform: translateY(-6px); box-shadow: 0 16px 32px rgba(17,18,24,0.1) !important; }
   @keyframes bdsFadeUp { from { opacity: 0; transform: translateY(16px); } to { opacity: 1; transform: translateY(0); } }
 </style>
 </helmet>
@@ -29,7 +31,7 @@
 <div style="background:#FFFFFF;color:#17171A;position:relative;">
 
   <div style="background:#FC6620;color:#111218;">
-    <div style="width:min(1220px,calc(100% - 48px));margin:0 auto;height:36px;display:flex;align-items:center;justify-content:space-between;gap:16px;font-size:13px;font-weight:600;">
+    <div style="width:min(1280px,calc(100% - 48px));margin:0 auto;height:36px;display:flex;align-items:center;justify-content:space-between;gap:16px;font-size:13px;font-weight:600;">
       <div style="display:flex;align-items:center;gap:20px;overflow:hidden;">
         <span style="white-space:nowrap;">Mon &ndash; Sat: 8:00am &ndash; 6:00pm</span>
       </div>
@@ -42,7 +44,7 @@
   </div>
 
   <header style="{{ navBarStyle }}">
-    <div style="width:min(1220px,calc(100% - 48px));margin:0 auto;height:84px;display:flex;align-items:center;justify-content:space-between;gap:16px;">
+    <div style="width:min(1280px,calc(100% - 48px));margin:0 auto;height:84px;display:flex;align-items:center;justify-content:space-between;gap:16px;">
       <a href="#top" style="display:flex;align-items:center;color:#fff;">
         <img src="uploads/bennetts-images/logo.jpg" alt="Bennetts Driving School" style="height:50px;width:auto;display:block;" />
       </a>
@@ -90,7 +92,7 @@
   <section id="top" style="position:relative;overflow:hidden;background:#F7F7F7;padding:clamp(48px,8vw,88px) 24px clamp(56px,8vw,96px);">
     <div style="position:absolute;top:-60px;left:-40px;width:280px;height:280px;background:#EFEFEF;clip-path:polygon(0 0,100% 0,0 100%);"></div>
     <div style="position:absolute;bottom:0;left:120px;width:180px;height:180px;background:#111218;opacity:0.06;clip-path:polygon(50% 0,100% 100%,0 100%);"></div>
-    <div style="max-width:1220px;margin:0 auto;position:relative;display:flex;flex-direction:{{ heroRowDirection }};flex-wrap:wrap;align-items:center;gap:40px;">
+    <div style="max-width:1280px;margin:0 auto;position:relative;display:flex;flex-direction:{{ heroRowDirection }};flex-wrap:wrap;align-items:center;gap:40px;">
       <div style="flex:1 1 420px;min-width:300px;position:relative;z-index:2;">
         <div style="display:flex;align-items:center;gap:10px;margin-bottom:18px;">
           <span style="width:28px;height:2px;background:#C8460D;"></span>
@@ -118,19 +120,16 @@
   </section>
 
   <section style="background:#FFFFFF;padding:0 24px;">
-    <div style="max-width:1220px;margin:0 auto;padding:34px 0 30px;border-bottom:1px solid #E6E6E8;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:24px 32px;">
-      <span style="font-family:'Inter',sans-serif;font-size:12px;font-weight:700;letter-spacing:1.2px;text-transform:uppercase;color:#9E9EA5;">Trusted By Learners Across The Area</span>
+    <div style="max-width:1280px;margin:0 auto;padding:34px 0 30px;border-bottom:1px solid #E6E6E8;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:24px 32px;">
+      <span style="font-family:'Inter',sans-serif;font-size:12px;font-weight:700;letter-spacing:1.2px;text-transform:uppercase;color:#9E9EA5;">Trusted By Learners Across The UK</span>
       <div style="display:flex;flex-wrap:wrap;align-items:center;gap:24px 40px;">
-        <span style="font-family:'Inter',sans-serif;font-size:15px;font-weight:700;color:#111218;">Logo One</span>
-        <span style="font-family:'Inter',sans-serif;font-size:15px;font-weight:700;color:#111218;">Logo Two</span>
-        <span style="font-family:'Inter',sans-serif;font-size:15px;font-weight:700;color:#111218;">Logo Three</span>
-        <span style="font-family:'Inter',sans-serif;font-size:15px;font-weight:700;color:#111218;">Logo Four</span>
+        <img src="uploads/bennetts-images/34_trustpilot_badge.png" alt="Trustpilot 5-star rating" loading="lazy" style="height:34px;width:auto;display:block;" />
       </div>
     </div>
   </section>
 
   <section style="background:#FFFFFF;padding:clamp(32px,5vw,56px) 24px clamp(48px,7vw,80px);">
-    <div style="max-width:1220px;margin:0 auto;position:relative;z-index:5;">
+    <div style="max-width:1280px;margin:0 auto;position:relative;z-index:5;">
       <div style="display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:28px;">
 
         <div class="bds-why-card" style="background:#fff;padding:40px 30px 34px;border:1px solid #E6E6E8;border-radius:3px;box-shadow:0 2px 6px rgba(17,18,24,0.03);position:relative;">
@@ -162,7 +161,12 @@
   </section>
 
   <section style="background:#FFFFFF;padding:clamp(24px,4vw,40px) 24px clamp(48px,8vw,96px);overflow:hidden;">
-    <div style="max-width:1220px;margin:0 auto;display:flex;flex-wrap:wrap;align-items:center;gap:56px;">
+    <div style="max-width:1280px;margin:0 auto;display:flex;flex-wrap:wrap;align-items:center;gap:56px;">
+      <div style="flex:1 1 340px;min-width:260px;display:flex;justify-content:center;align-self:flex-end;position:relative;margin-bottom:calc(-1 * clamp(48px,8vw,96px));">
+        <div style="position:absolute;left:-4%;top:-6%;width:130px;height:130px;background-image:radial-gradient(rgba(252,102,32,0.5) 2.2px, transparent 2.2px);background-size:16px 16px;opacity:0.9;z-index:0;"></div>
+        <div style="position:absolute;right:-6%;bottom:-4%;width:150px;height:150px;background-image:radial-gradient(rgba(17,18,24,0.3) 2px, transparent 2px);background-size:16px 16px;opacity:0.85;z-index:0;"></div>
+        <img src="/Users/lewisparrott/Downloads/cb1f23df-a1cd-4f25-a5a6-c3c45b623637 (1).png" alt="Student holding a passed driving test sign" loading="lazy" style="position:relative;z-index:1;width:100%;max-width:460px;height:auto;object-fit:contain;" />
+      </div>
       <div style="flex:1 1 420px;min-width:300px;">
         <span style="font-family:'Inter',sans-serif;font-weight:700;font-size:13px;letter-spacing:1px;color:#C8460D;text-transform:uppercase;">Pass With Confidence</span>
         <h2 style="font-family:'Inter',sans-serif;font-weight:800;font-size:clamp(28px,4vw,40px);line-height:1.2;margin:14px 0 18px;color:#111218;">Feel Ready for Test Day and Proud of the Result</h2>
@@ -201,9 +205,10 @@
     </div>
   </section>
 
-  <section style="position:relative;background:#111218;padding:clamp(56px,9vw,110px) 24px;overflow:hidden;">
-    <div style="position:absolute;inset:0;background:linear-gradient(100deg,#111218 30%,#1A1B22 100%);"></div>
-    <div style="max-width:1220px;margin:0 auto;position:relative;display:flex;flex-wrap:wrap;align-items:center;gap:40px;justify-content:space-between;">
+  <section id="bds-cta-parallax" style="{{ ctaSectionStyle }}">
+    <div style="{{ ctaParallaxMediaStyle }}"></div>
+    <div style="position:absolute;inset:0;background:linear-gradient(100deg,rgba(0,0,0,0.82) 18%,rgba(0,0,0,0.68) 100%);"></div>
+    <div style="max-width:1280px;margin:0 auto;position:relative;display:flex;flex-wrap:wrap;align-items:center;gap:40px;justify-content:space-between;">
       <div style="flex:1 1 320px;min-width:280px;">
         <div style="display:flex;align-items:center;gap:10px;margin-bottom:14px;">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#FC6620" stroke-width="1.8"><path d="M12 3 2 8l10 5 10-5-10-5Z"/></svg>
@@ -233,7 +238,7 @@
   </section>
 
   <section style="position:relative;background:{{ testimonialSectionBg }};padding:clamp(48px,8vw,96px) 24px;overflow:hidden;">
-    <div style="max-width:1220px;margin:0 auto;position:relative;">
+    <div style="max-width:1280px;margin:0 auto;position:relative;">
       <div style="text-align:center;max-width:640px;margin:0 auto 56px;">
         <span style="font-family:'Inter',sans-serif;font-weight:700;font-size:13px;letter-spacing:1px;color:{{ testimonialEyebrowColor }};text-transform:uppercase;">Our Feedback</span>
         <h2 style="font-family:'Inter',sans-serif;font-weight:800;font-size:clamp(28px,4vw,40px);line-height:1.2;margin:14px 0 0;color:#111218;">See What Students are Talking About</h2>
@@ -259,154 +264,137 @@
   </section>
 
   <section id="services" style="position:relative;background:#F7F7F7;padding:clamp(48px,8vw,96px) 24px;overflow:hidden;">
-    <div style="position:absolute;inset:0;background-image:radial-gradient(#DEDEE0 1px, transparent 1px);background-size:16px 16px;opacity:0.5;pointer-events:none;"></div>
-    <div style="max-width:1220px;margin:0 auto;position:relative;">
-      <div style="text-align:center;max-width:640px;margin:0 auto 48px;">
-        <div style="display:flex;align-items:center;justify-content:center;gap:10px;margin-bottom:14px;">
-          <span style="font-family:'Inter',sans-serif;font-weight:700;font-size:13px;letter-spacing:1px;color:#C8460D;text-transform:uppercase;">Our Services</span>
+    <div style="max-width:1280px;margin:0 auto;position:relative;">
+      <div style="display:flex;align-items:flex-end;justify-content:space-between;gap:24px;flex-wrap:wrap;margin-bottom:36px;">
+        <div style="max-width:640px;">
+          <div style="display:flex;align-items:center;gap:10px;margin-bottom:14px;">
+            <span style="font-family:'Inter',sans-serif;font-weight:700;font-size:13px;letter-spacing:1px;color:#C8460D;text-transform:uppercase;">Our Services</span>
+          </div>
+          <h2 style="font-family:'Inter',sans-serif;font-weight:800;font-size:clamp(28px,4vw,40px);line-height:1.2;margin:0;color:#111218;">We're Offering the Best Services to You</h2>
         </div>
-        <h2 style="font-family:'Inter',sans-serif;font-weight:800;font-size:clamp(28px,4vw,40px);line-height:1.2;margin:0;color:#111218;">We're Offering the Best Services to You</h2>
+        <div style="display:flex;gap:12px;flex-shrink:0;">
+          <button onClick="{{ servicesPrev }}" style="{{ servicesPrevBtnStyle }}"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#111218" stroke-width="2.2"><polyline points="15 18 9 12 15 6"/></svg></button>
+          <button onClick="{{ servicesNext }}" style="{{ servicesNextBtnStyle }}"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#111218" stroke-width="2.2"><polyline points="9 18 15 12 9 6"/></svg></button>
+        </div>
       </div>
 
-      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:28px;">
-
-        <a href="#contact" style="display:block;background:#fff;border-radius:4px;overflow:hidden;box-shadow:0 8px 24px rgba(17,18,24,0.06);text-decoration:none;">
-          <div style="position:relative;height:190px;">
-            <img src="uploads/bennetts-images/04_service_instructor_training.jpg" alt="Instructor training an in-car student" loading="lazy" style="width:100%;height:100%;object-fit:cover;" />
+      <div id="bds-services-viewport" style="overflow:hidden;">
+        <div style="{{ servicesTrackStyle }}">
+          <div class="bds-service-card" style="{{ servicesCardStyle }}">
+            <img src="uploads/bennetts-images/04_service_instructor_training.jpg" alt="Instructor training an in-car student" loading="lazy" style="width:100%;height:170px;object-fit:cover;display:block;" />
+            <div style="padding:22px 24px 24px;">
+              <div style="width:64px;height:4px;background:#FC6620;margin:0 0 16px;"></div>
+              <h3 style="font-family:'Inter',sans-serif;font-size:19px;font-weight:700;margin:0 0 10px;color:#111218;">Instructor Training</h3>
+              <p style="font-size:14px;color:#66666C;margin:0 0 16px;line-height:1.7;">One-on-one coaching from instructors certified to the highest standard. Each lesson is paced around your confidence and progress on the road.</p>
+              <a href="#contact" style="display:block;text-align:center;background:transparent;border:1px solid #E6E6E8;color:#111218;font-family:'Inter',sans-serif;font-weight:700;font-size:13px;padding:11px 0;border-radius:4px;text-decoration:none;">Learn More</a>
+            </div>
           </div>
-          <div style="padding:22px 20px;">
-            <h3 style="font-family:'Inter',sans-serif;font-size:18px;font-weight:700;margin:0 0 8px;color:#111218;">Instructor Training</h3>
-            <p style="font-size:13px;color:#66666C;margin:0 0 16px;line-height:1.6;">One-on-one coaching from instructors certified to the highest standard. Each lesson is paced around your confidence and progress on the road.</p>
-            <span style="display:inline-flex;align-items:center;gap:8px;font-family:'Inter',sans-serif;font-size:13px;font-weight:700;letter-spacing:0.4px;text-transform:uppercase;color:#C8460D;">Learn More</span>
+          <div class="bds-service-card" style="{{ servicesCardStyle }}">
+            <img src="uploads/bennetts-images/05_service_road_guidelines.jpg" alt="Reviewing road guidelines on a tablet" loading="lazy" style="width:100%;height:170px;object-fit:cover;display:block;" />
+            <div style="padding:22px 24px 24px;">
+              <div style="width:64px;height:4px;background:#FC6620;margin:0 0 16px;"></div>
+              <h3 style="font-family:'Inter',sans-serif;font-size:19px;font-weight:700;margin:0 0 10px;color:#111218;">Road Guidelines</h3>
+              <p style="font-size:14px;color:#66666C;margin:0 0 16px;line-height:1.7;">Practical route planning so every lesson covers real intersections and signage. You'll build familiarity with the roads and situations most likely to appear in your test area.</p>
+              <a href="#contact" style="display:block;text-align:center;background:transparent;border:1px solid #E6E6E8;color:#111218;font-family:'Inter',sans-serif;font-weight:700;font-size:13px;padding:11px 0;border-radius:4px;text-decoration:none;">Learn More</a>
+            </div>
           </div>
-        </a>
-
-        <a href="#contact" style="display:block;background:#fff;border-radius:4px;overflow:hidden;box-shadow:0 8px 24px rgba(17,18,24,0.06);text-decoration:none;">
-          <div style="position:relative;height:190px;">
-            <img src="uploads/bennetts-images/05_service_road_guidelines.jpg" alt="Reviewing road guidelines on a tablet" loading="lazy" style="width:100%;height:100%;object-fit:cover;" />
+          <div class="bds-service-card" style="{{ servicesCardStyle }}">
+            <img src="uploads/bennetts-images/06_service_driving_license.jpg" alt="Student holding a new driving license" loading="lazy" style="width:100%;height:170px;object-fit:cover;display:block;" />
+            <div style="padding:22px 24px 24px;">
+              <div style="width:64px;height:4px;background:#FC6620;margin:0 0 16px;"></div>
+              <h3 style="font-family:'Inter',sans-serif;font-size:19px;font-weight:700;margin:0 0 10px;color:#111218;">Driving License</h3>
+              <p style="font-size:14px;color:#66666C;margin:0 0 16px;line-height:1.7;">Step-by-step help through the paperwork so nothing holds up your test date. We make the admin side clearer so you can focus on learning instead of chasing forms.</p>
+              <a href="#contact" style="display:block;text-align:center;background:transparent;border:1px solid #E6E6E8;color:#111218;font-family:'Inter',sans-serif;font-weight:700;font-size:13px;padding:11px 0;border-radius:4px;text-decoration:none;">Learn More</a>
+            </div>
           </div>
-          <div style="padding:22px 20px;">
-            <h3 style="font-family:'Inter',sans-serif;font-size:18px;font-weight:700;margin:0 0 8px;color:#111218;">Road Guidelines</h3>
-            <p style="font-size:13px;color:#66666C;margin:0 0 16px;line-height:1.6;">Practical route planning so every lesson covers real intersections and signage. You'll build familiarity with the roads and situations most likely to appear in your test area.</p>
-            <span style="display:inline-flex;align-items:center;gap:8px;font-family:'Inter',sans-serif;font-size:13px;font-weight:700;letter-spacing:0.4px;text-transform:uppercase;color:#C8460D;">Learn More</span>
+          <div class="bds-service-card" style="{{ servicesCardStyle }}">
+            <img src="uploads/bennetts-images/07_service_road_safety.jpg" alt="Fastening a seatbelt before driving" loading="lazy" style="width:100%;height:170px;object-fit:cover;display:block;" />
+            <div style="padding:22px 24px 24px;">
+              <div style="width:64px;height:4px;background:#FC6620;margin:0 0 16px;"></div>
+              <h3 style="font-family:'Inter',sans-serif;font-size:19px;font-weight:700;margin:0 0 10px;color:#111218;">Road Safety Guide</h3>
+              <p style="font-size:14px;color:#66666C;margin:0 0 16px;line-height:1.7;">Defensive-driving habits that carry on well past your test day. The focus stays on calm decision-making in everyday traffic, not just passing the exam.</p>
+              <a href="#contact" style="display:block;text-align:center;background:transparent;border:1px solid #E6E6E8;color:#111218;font-family:'Inter',sans-serif;font-weight:700;font-size:13px;padding:11px 0;border-radius:4px;text-decoration:none;">Learn More</a>
+            </div>
           </div>
-        </a>
-
-        <a href="#contact" style="display:block;background:#fff;border-radius:4px;overflow:hidden;box-shadow:0 8px 24px rgba(17,18,24,0.06);text-decoration:none;">
-          <div style="position:relative;height:190px;">
-            <img src="uploads/bennetts-images/06_service_driving_license.jpg" alt="Student holding a new driving license" loading="lazy" style="width:100%;height:100%;object-fit:cover;" />
+          <div class="bds-service-card" style="{{ servicesCardStyle }}">
+            <img src="uploads/bennetts-images/04_service_instructor_training.jpg" alt="Instructor training an in-car student" loading="lazy" style="width:100%;height:170px;object-fit:cover;display:block;" />
+            <div style="padding:22px 24px 24px;">
+              <div style="width:64px;height:4px;background:#FC6620;margin:0 0 16px;"></div>
+              <h3 style="font-family:'Inter',sans-serif;font-size:19px;font-weight:700;margin:0 0 10px;color:#111218;">Instructor Training</h3>
+              <p style="font-size:14px;color:#66666C;margin:0 0 16px;line-height:1.7;">One-on-one coaching from instructors certified to the highest standard. Each lesson is paced around your confidence and progress on the road.</p>
+              <a href="#contact" style="display:block;text-align:center;background:transparent;border:1px solid #E6E6E8;color:#111218;font-family:'Inter',sans-serif;font-weight:700;font-size:13px;padding:11px 0;border-radius:4px;text-decoration:none;">Learn More</a>
+            </div>
           </div>
-          <div style="padding:22px 20px;">
-            <h3 style="font-family:'Inter',sans-serif;font-size:18px;font-weight:700;margin:0 0 8px;color:#111218;">Driving License</h3>
-            <p style="font-size:13px;color:#66666C;margin:0 0 16px;line-height:1.6;">Step-by-step help through the paperwork so nothing holds up your test date. We make the admin side clearer so you can focus on learning instead of chasing forms.</p>
-            <span style="display:inline-flex;align-items:center;gap:8px;font-family:'Inter',sans-serif;font-size:13px;font-weight:700;letter-spacing:0.4px;text-transform:uppercase;color:#C8460D;">Learn More</span>
+          <div class="bds-service-card" style="{{ servicesCardStyle }}">
+            <img src="uploads/bennetts-images/05_service_road_guidelines.jpg" alt="Reviewing road guidelines on a tablet" loading="lazy" style="width:100%;height:170px;object-fit:cover;display:block;" />
+            <div style="padding:22px 24px 24px;">
+              <div style="width:64px;height:4px;background:#FC6620;margin:0 0 16px;"></div>
+              <h3 style="font-family:'Inter',sans-serif;font-size:19px;font-weight:700;margin:0 0 10px;color:#111218;">Road Guidelines</h3>
+              <p style="font-size:14px;color:#66666C;margin:0 0 16px;line-height:1.7;">Practical route planning so every lesson covers real intersections and signage. You'll build familiarity with the roads and situations most likely to appear in your test area.</p>
+              <a href="#contact" style="display:block;text-align:center;background:transparent;border:1px solid #E6E6E8;color:#111218;font-family:'Inter',sans-serif;font-weight:700;font-size:13px;padding:11px 0;border-radius:4px;text-decoration:none;">Learn More</a>
+            </div>
           </div>
-        </a>
-
-        <a href="#contact" style="display:block;background:#fff;border-radius:4px;overflow:hidden;box-shadow:0 8px 24px rgba(17,18,24,0.06);text-decoration:none;">
-          <div style="position:relative;height:190px;">
-            <img src="uploads/bennetts-images/07_service_road_safety.jpg" alt="Fastening a seatbelt before driving" loading="lazy" style="width:100%;height:100%;object-fit:cover;" />
+          <div class="bds-service-card" style="{{ servicesCardStyle }}">
+            <img src="uploads/bennetts-images/06_service_driving_license.jpg" alt="Student holding a new driving license" loading="lazy" style="width:100%;height:170px;object-fit:cover;display:block;" />
+            <div style="padding:22px 24px 24px;">
+              <div style="width:64px;height:4px;background:#FC6620;margin:0 0 16px;"></div>
+              <h3 style="font-family:'Inter',sans-serif;font-size:19px;font-weight:700;margin:0 0 10px;color:#111218;">Driving License</h3>
+              <p style="font-size:14px;color:#66666C;margin:0 0 16px;line-height:1.7;">Step-by-step help through the paperwork so nothing holds up your test date. We make the admin side clearer so you can focus on learning instead of chasing forms.</p>
+              <a href="#contact" style="display:block;text-align:center;background:transparent;border:1px solid #E6E6E8;color:#111218;font-family:'Inter',sans-serif;font-weight:700;font-size:13px;padding:11px 0;border-radius:4px;text-decoration:none;">Learn More</a>
+            </div>
           </div>
-          <div style="padding:22px 20px;">
-            <h3 style="font-family:'Inter',sans-serif;font-size:18px;font-weight:700;margin:0 0 8px;color:#111218;">Road Safety Guide</h3>
-            <p style="font-size:13px;color:#66666C;margin:0 0 16px;line-height:1.6;">Defensive-driving habits that carry on well past your test day. The focus stays on calm decision-making in everyday traffic, not just passing the exam.</p>
-            <span style="display:inline-flex;align-items:center;gap:8px;font-family:'Inter',sans-serif;font-size:13px;font-weight:700;letter-spacing:0.4px;text-transform:uppercase;color:#C8460D;">Learn More</span>
+          <div class="bds-service-card" style="{{ servicesCardStyle }}">
+            <img src="uploads/bennetts-images/07_service_road_safety.jpg" alt="Fastening a seatbelt before driving" loading="lazy" style="width:100%;height:170px;object-fit:cover;display:block;" />
+            <div style="padding:22px 24px 24px;">
+              <div style="width:64px;height:4px;background:#FC6620;margin:0 0 16px;"></div>
+              <h3 style="font-family:'Inter',sans-serif;font-size:19px;font-weight:700;margin:0 0 10px;color:#111218;">Road Safety Guide</h3>
+              <p style="font-size:14px;color:#66666C;margin:0 0 16px;line-height:1.7;">Defensive-driving habits that carry on well past your test day. The focus stays on calm decision-making in everyday traffic, not just passing the exam.</p>
+              <a href="#contact" style="display:block;text-align:center;background:transparent;border:1px solid #E6E6E8;color:#111218;font-family:'Inter',sans-serif;font-weight:700;font-size:13px;padding:11px 0;border-radius:4px;text-decoration:none;">Learn More</a>
+            </div>
           </div>
-        </a>
-
-        <a href="#contact" style="display:block;background:#fff;border-radius:4px;overflow:hidden;box-shadow:0 8px 24px rgba(17,18,24,0.06);text-decoration:none;">
-          <div style="position:relative;height:190px;">
-            <img src="uploads/bennetts-images/04_service_instructor_training.jpg" alt="Instructor training an in-car student" loading="lazy" style="width:100%;height:100%;object-fit:cover;" />
-          </div>
-          <div style="padding:22px 20px;">
-            <h3 style="font-family:'Inter',sans-serif;font-size:18px;font-weight:700;margin:0 0 8px;color:#111218;">Instructor Training</h3>
-            <p style="font-size:13px;color:#66666C;margin:0 0 16px;line-height:1.6;">One-on-one coaching from instructors certified to the highest standard. Each lesson is paced around your confidence and progress on the road.</p>
-            <span style="display:inline-flex;align-items:center;gap:8px;font-family:'Inter',sans-serif;font-size:13px;font-weight:700;letter-spacing:0.4px;text-transform:uppercase;color:#C8460D;">Learn More</span>
-          </div>
-        </a>
-
-        <a href="#contact" style="display:block;background:#fff;border-radius:4px;overflow:hidden;box-shadow:0 8px 24px rgba(17,18,24,0.06);text-decoration:none;">
-          <div style="position:relative;height:190px;">
-            <img src="uploads/bennetts-images/05_service_road_guidelines.jpg" alt="Reviewing road guidelines on a tablet" loading="lazy" style="width:100%;height:100%;object-fit:cover;" />
-          </div>
-          <div style="padding:22px 20px;">
-            <h3 style="font-family:'Inter',sans-serif;font-size:18px;font-weight:700;margin:0 0 8px;color:#111218;">Road Guidelines</h3>
-            <p style="font-size:13px;color:#66666C;margin:0 0 16px;line-height:1.6;">Practical route planning so every lesson covers real intersections and signage. You'll build familiarity with the roads and situations most likely to appear in your test area.</p>
-            <span style="display:inline-flex;align-items:center;gap:8px;font-family:'Inter',sans-serif;font-size:13px;font-weight:700;letter-spacing:0.4px;text-transform:uppercase;color:#C8460D;">Learn More</span>
-          </div>
-        </a>
-
-        <a href="#contact" style="display:block;background:#fff;border-radius:4px;overflow:hidden;box-shadow:0 8px 24px rgba(17,18,24,0.06);text-decoration:none;">
-          <div style="position:relative;height:190px;">
-            <img src="uploads/bennetts-images/06_service_driving_license.jpg" alt="Student holding a new driving license" loading="lazy" style="width:100%;height:100%;object-fit:cover;" />
-          </div>
-          <div style="padding:22px 20px;">
-            <h3 style="font-family:'Inter',sans-serif;font-size:18px;font-weight:700;margin:0 0 8px;color:#111218;">Driving License</h3>
-            <p style="font-size:13px;color:#66666C;margin:0 0 16px;line-height:1.6;">Step-by-step help through the paperwork so nothing holds up your test date. We make the admin side clearer so you can focus on learning instead of chasing forms.</p>
-            <span style="display:inline-flex;align-items:center;gap:8px;font-family:'Inter',sans-serif;font-size:13px;font-weight:700;letter-spacing:0.4px;text-transform:uppercase;color:#C8460D;">Learn More</span>
-          </div>
-        </a>
-
-        <a href="#contact" style="display:block;background:#fff;border-radius:4px;overflow:hidden;box-shadow:0 8px 24px rgba(17,18,24,0.06);text-decoration:none;">
-          <div style="position:relative;height:190px;">
-            <img src="uploads/bennetts-images/07_service_road_safety.jpg" alt="Fastening a seatbelt before driving" loading="lazy" style="width:100%;height:100%;object-fit:cover;" />
-          </div>
-          <div style="padding:22px 20px;">
-            <h3 style="font-family:'Inter',sans-serif;font-size:18px;font-weight:700;margin:0 0 8px;color:#111218;">Road Safety Guide</h3>
-            <p style="font-size:13px;color:#66666C;margin:0 0 16px;line-height:1.6;">Defensive-driving habits that carry on well past your test day. The focus stays on calm decision-making in everyday traffic, not just passing the exam.</p>
-            <span style="display:inline-flex;align-items:center;gap:8px;font-family:'Inter',sans-serif;font-size:13px;font-weight:700;letter-spacing:0.4px;text-transform:uppercase;color:#C8460D;">Learn More</span>
-          </div>
-        </a>
-
+        </div>
       </div>
     </div>
   </section>
 
-  <section style="background:#FFFFFF;padding:clamp(48px,8vw,96px) 24px;">
-    <div style="max-width:1220px;margin:0 auto;display:flex;flex-wrap:wrap;align-items:center;gap:56px;">
-      <div style="flex:1 1 420px;min-width:300px;position:relative;">
-        <img src="uploads/bennetts-images/03_about_secondary.jpg" alt="Student smiling out of a car window" loading="lazy" style="width:100%;height:420px;object-fit:cover;border-radius:4px;" />
-        <div style="position:absolute;left:0;right:0;bottom:0;background:#FC6620;padding:22px 24px;display:flex;align-items:center;justify-content:space-between;gap:16px;border-radius:0 0 4px 4px;">
-          <span style="font-family:'Inter',sans-serif;font-weight:700;font-size:18px;color:#111218;">Award-Winning Driving School in Town</span>
-          <a href="#courses" aria-label="See courses" style="width:44px;height:44px;border-radius:50%;background:#111218;display:flex;align-items:center;justify-content:center;flex-shrink:0;">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><line x1="4" y1="12" x2="20" y2="12"/><polyline points="13 5 20 12 13 19"/></svg>
-          </a>
-        </div>
+  <section id="about" style="background:#FFFFFF;padding:clamp(48px,8vw,96px) 24px;">
+    <div style="max-width:1280px;margin:0 auto;display:flex;flex-wrap:wrap;align-items:center;gap:56px;">
+      <div style="flex:1 1 380px;min-width:300px;position:relative;height:560px;">
+        <img src="uploads/bennetts-images/30_about_overlap_sign.jpg" alt="Student holding a Bennetts pass sign beside the car" loading="lazy" style="position:absolute;top:0;left:0;width:56%;height:56%;object-fit:cover;border-radius:4px;box-shadow:0 16px 32px rgba(17,18,24,0.16);z-index:1;" />
+        <img src="uploads/bennetts-images/31_about_overlap_certificate_male.jpeg" alt="Student celebrating with his pass certificate" loading="lazy" style="position:absolute;top:24%;right:0;width:50%;height:48%;object-fit:cover;border-radius:4px;box-shadow:0 18px 36px rgba(17,18,24,0.2);z-index:2;" />
+        <img src="uploads/bennetts-images/32_about_overlap_certificate_female.jpg" alt="Student holding her pass certificate by the car" loading="lazy" style="position:absolute;bottom:0;left:14%;width:46%;height:42%;object-fit:cover;border-radius:4px;box-shadow:0 20px 40px rgba(17,18,24,0.24);z-index:3;" />
       </div>
       <div style="flex:1 1 420px;min-width:300px;">
         <div style="display:flex;align-items:center;gap:10px;margin-bottom:14px;">
           <span style="width:28px;height:2px;background:#C8460D;"></span>
-          <span style="font-family:'Inter',sans-serif;font-weight:700;font-size:13px;letter-spacing:1px;color:#C8460D;text-transform:uppercase;">Develop Skill</span>
+          <span style="font-family:'Inter',sans-serif;font-weight:700;font-size:13px;letter-spacing:1px;color:#C8460D;text-transform:uppercase;">Get To Know Us</span>
         </div>
-        <h2 style="font-family:'Inter',sans-serif;font-weight:800;font-size:clamp(28px,4vw,40px);line-height:1.2;margin:0 0 18px;color:#111218;">Why You Should Choose Bennetts Driving School?</h2>
-        <p style="font-size:16px;line-height:1.7;color:#66666C;margin:0 0 28px;max-width:480px;">We keep class sizes small and lesson plans structured, so progress is easy to see week over week.</p>
+        <h2 style="font-family:'Inter',sans-serif;font-weight:800;font-size:clamp(28px,4vw,40px);line-height:1.15;margin:0 0 18px;color:#111218;">Results That Hold Up Long After the Test Is Over</h2>
+        <p style="font-size:16px;line-height:1.7;color:#66666C;margin:0 0 16px;">Passing a test is one thing. Staying safe, calm and confident every single time you get behind the wheel afterwards is the actual goal, and it's what we measure ourselves against internally, not just our pass rate.</p>
+        <p style="font-size:16px;line-height:1.7;color:#66666C;margin:0 0 28px;">That's why defensive driving, hazard awareness and independent decision-making are woven into every lesson from week one, rather than being crammed in right before test day.</p>
 
-        <div style="display:flex;flex-direction:column;gap:24px;">
-          <div style="display:flex;gap:18px;">
-            <span style="width:52px;height:52px;border-radius:50%;background:rgba(252,102,32,0.12);display:flex;align-items:center;justify-content:center;flex-shrink:0;">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#FC6620" stroke-width="1.7"><rect x="3" y="4" width="18" height="12" rx="1.5"/><line x1="8" y1="20" x2="16" y2="20"/><line x1="12" y1="16" x2="12" y2="20"/></svg>
-            </span>
-            <div>
-              <h3 style="font-family:'Inter',sans-serif;font-size:17px;font-weight:700;margin:0 0 6px;color:#111218;">Online Traffic School</h3>
-              <p style="font-size:14px;color:#66666C;margin:0;line-height:1.6;">Complete theory coursework on your own schedule, from any device.</p>
-            </div>
+        <div style="display:flex;flex-direction:column;gap:0;margin-bottom:28px;">
+          <div style="display:flex;align-items:center;gap:18px;padding:0 0 18px;">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#FC6620" stroke-width="2.6" style="flex-shrink:0;"><polyline points="20 6 9 17 4 12"/></svg>
+            <p style="font-size:18px;color:#111218;margin:0;line-height:1.5;font-weight:600;">96% first-time pass rate across the last 3 years</p>
           </div>
-          <div style="display:flex;gap:18px;">
-            <span style="width:52px;height:52px;border-radius:50%;background:rgba(252,102,32,0.12);display:flex;align-items:center;justify-content:center;flex-shrink:0;">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#FC6620" stroke-width="1.7"><circle cx="12" cy="8" r="3.2"/><path d="M5 20c0-3.6 3.1-6 7-6s7 2.4 7 6"/></svg>
-            </span>
-            <div>
-              <h3 style="font-family:'Inter',sans-serif;font-size:17px;font-weight:700;margin:0 0 6px;color:#111218;">Expert Instructors</h3>
-              <p style="font-size:14px;color:#66666C;margin:0;line-height:1.6;">Every instructor is licensed, background-checked, and genuinely patient.</p>
-            </div>
+          <div style="display:flex;align-items:center;gap:18px;padding:0 0 18px;">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#FC6620" stroke-width="2.6" style="flex-shrink:0;"><polyline points="20 6 9 17 4 12"/></svg>
+            <p style="font-size:18px;color:#111218;margin:0;line-height:1.5;font-weight:600;">Zero-excess insurance included on every lesson car</p>
+          </div>
+          <div style="display:flex;align-items:center;gap:18px;padding:0;">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#FC6620" stroke-width="2.6" style="flex-shrink:0;"><polyline points="20 6 9 17 4 12"/></svg>
+            <p style="font-size:18px;color:#111218;margin:0;line-height:1.5;font-weight:600;">Free mock test before you book the real thing</p>
           </div>
         </div>
+
+        <a href="#about" style="display:inline-flex;align-items:center;justify-content:center;background:#111218;color:#fff;font-weight:700;font-size:15px;height:54px;padding:0 34px;border-radius:3px;">Get To Know Us</a>
       </div>
     </div>
   </section>
 
   <section id="courses" style="background:#F7F7F7;padding:clamp(48px,8vw,96px) 24px;">
-    <div style="max-width:1220px;margin:0 auto;">
+    <div style="max-width:1280px;margin:0 auto;">
       <div style="text-align:center;max-width:640px;margin:0 auto 48px;">
         <span style="font-family:'Inter',sans-serif;font-weight:700;font-size:13px;letter-spacing:1px;color:#C8460D;text-transform:uppercase;">See Our Courses</span>
         <h2 style="font-family:'Inter',sans-serif;font-weight:800;font-size:clamp(28px,4vw,40px);line-height:1.2;margin:14px 0 0;color:#111218;">Develop Your Driving Skill to Join the Course</h2>
@@ -472,125 +460,49 @@
     </div>
   </section>
 
-  <section style="background:#FFFFFF;padding:0 24px clamp(48px,7vw,80px);">
-    <div style="max-width:1220px;margin:0 auto;position:relative;z-index:5;">
-      <div style="display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:28px;padding-top:22px;">
-        <div class="bds-why-card" style="background:#fff;padding:52px 30px 34px;border:1px solid #E6E6E8;border-radius:3px;box-shadow:0 2px 6px rgba(17,18,24,0.03);position:relative;">
-          <span style="position:absolute;top:0;left:50%;transform:translate(-50%,-50%);width:58px;height:58px;border-radius:50%;background:#FC6620;display:flex;align-items:center;justify-content:center;">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="1.9"><path d="M12 3 4 6v6c0 5 3.4 8.5 8 10 4.6-1.5 8-5 8-10V6l-8-3Z"/><polyline points="8.5 12 11 14.5 15.5 9.5"/></svg>
-          </span>
-          <h3 style="font-family:'Inter',sans-serif;font-weight:800;font-size:20px;margin:0 0 10px;color:#111218;line-height:1.3;position:relative;z-index:1;">DVSA-Approved Instructors</h3>
-          <p style="font-size:14px;line-height:1.7;color:#66666C;margin:0;position:relative;z-index:1;">Learn with professional, DBS-checked instructors who are regularly assessed to maintain high teaching standards.</p>
-        </div>
-
-        <div class="bds-why-card" style="background:#fff;padding:52px 30px 34px;border:1px solid #E6E6E8;border-radius:3px;box-shadow:0 2px 6px rgba(17,18,24,0.03);position:relative;">
-          <span style="position:absolute;top:0;left:50%;transform:translate(-50%,-50%);width:58px;height:58px;border-radius:50%;background:#FC6620;display:flex;align-items:center;justify-content:center;">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="1.9"><rect x="3" y="5" width="18" height="16" rx="2"/><line x1="16" y1="3" x2="16" y2="7"/><line x1="8" y1="3" x2="8" y2="7"/><line x1="3" y1="10" x2="21" y2="10"/><path d="M8 14h2M8 17h2M14 14h2"/></svg>
-          </span>
-          <h3 style="font-family:'Inter',sans-serif;font-weight:800;font-size:20px;margin:0 0 10px;color:#111218;line-height:1.3;position:relative;z-index:1;">Lessons Built Around You</h3>
-          <p style="font-size:14px;line-height:1.7;color:#66666C;margin:0;position:relative;z-index:1;">Flexible weekday, evening and weekend lessons, with convenient pick-up and drop-off options.</p>
-        </div>
-
-        <div class="bds-why-card" style="background:#fff;padding:52px 30px 34px;border:1px solid #E6E6E8;border-radius:3px;box-shadow:0 2px 6px rgba(17,18,24,0.03);position:relative;">
-          <span style="position:absolute;top:0;left:50%;transform:translate(-50%,-50%);width:58px;height:58px;border-radius:50%;background:#FC6620;display:flex;align-items:center;justify-content:center;">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="1.9"><circle cx="12" cy="8" r="5.5"/><path d="m8 13-1.5 7L12 17l5.5 3-1.5-7"/></svg>
-          </span>
-          <h3 style="font-family:'Inter',sans-serif;font-weight:800;font-size:20px;margin:0 0 10px;color:#111218;line-height:1.3;position:relative;z-index:1;">Trusted Since 1985</h3>
-          <p style="font-size:14px;line-height:1.7;color:#66666C;margin:0;position:relative;z-index:1;">Nearly four decades of experience helping thousands of learners gain the skills they need for a lifetime of driving.</p>
-        </div>
-
-        <div class="bds-why-card" style="background:#fff;padding:52px 30px 34px;border:1px solid #E6E6E8;border-radius:3px;box-shadow:0 2px 6px rgba(17,18,24,0.03);position:relative;">
-          <span style="position:absolute;top:0;left:50%;transform:translate(-50%,-50%);width:58px;height:58px;border-radius:50%;background:#FC6620;display:flex;align-items:center;justify-content:center;">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="1.9"><path d="M4 12h16"/><path d="M12 4v16"/><circle cx="12" cy="12" r="9"/></svg>
-          </span>
-          <h3 style="font-family:'Inter',sans-serif;font-weight:800;font-size:20px;margin:0 0 10px;color:#111218;line-height:1.3;position:relative;z-index:1;">Calm, Structured Progress</h3>
-          <p style="font-size:14px;line-height:1.7;color:#66666C;margin:0;position:relative;z-index:1;">Clear lesson goals and steady feedback make it easier to build confidence without feeling rushed.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section style="background:#FFFFFF;padding:clamp(24px,4vw,40px) 24px clamp(48px,8vw,88px);">
-    <div style="max-width:1220px;margin:0 auto;position:relative;z-index:5;display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:24px;">
-
-      <div style="background:#fff;box-shadow:0 12px 32px rgba(17,18,24,0.1);">
-        <div style="background:#111218;padding:26px 24px;display:flex;align-items:center;gap:16px;">
-          <span style="width:48px;height:48px;background:#FC6620;display:flex;align-items:center;justify-content:center;flex-shrink:0;">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#111218" stroke-width="1.8"><rect x="2" y="6" width="20" height="14" rx="2"/><circle cx="8" cy="13" r="2"/><line x1="13" y1="11" x2="18" y2="11"/><line x1="13" y1="15" x2="18" y2="15"/></svg>
-          </span>
-          <h3 style="font-family:'Inter',sans-serif;font-size:17px;font-weight:700;margin:0;color:#fff;">Driving License</h3>
-        </div>
-        <div style="padding:24px;">
-          <p style="font-size:14px;color:#66666C;margin:0;line-height:1.6;">Full guidance on the paperwork, theory test, and practical exam requirements.</p>
-        </div>
-      </div>
-
-      <div style="background:#fff;box-shadow:0 12px 32px rgba(17,18,24,0.1);">
-        <div style="background:#111218;padding:26px 24px;display:flex;align-items:center;gap:16px;">
-          <span style="width:48px;height:48px;background:#FC6620;display:flex;align-items:center;justify-content:center;flex-shrink:0;">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#111218" stroke-width="1.8"><path d="M12 3 2 8l10 5 10-5-10-5Z"/><path d="M6 10.5V16c0 1.5 2.7 3 6 3s6-1.5 6-3v-5.5"/></svg>
-          </span>
-          <h3 style="font-family:'Inter',sans-serif;font-size:17px;font-weight:700;margin:0;color:#fff;">Course for Everyone</h3>
-        </div>
-        <div style="padding:24px;">
-          <p style="font-size:14px;color:#66666C;margin:0;line-height:1.6;">Beginner to advanced programs tailored to your pace and confidence level.</p>
-        </div>
-      </div>
-
-      <div style="background:#fff;box-shadow:0 12px 32px rgba(17,18,24,0.1);">
-        <div style="background:#111218;padding:26px 24px;display:flex;align-items:center;gap:16px;">
-          <span style="width:48px;height:48px;background:#FC6620;display:flex;align-items:center;justify-content:center;flex-shrink:0;">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#111218" stroke-width="1.8"><rect x="4" y="3" width="16" height="18" rx="2"/><polyline points="8 11 11 14 16 8"/></svg>
-          </span>
-          <h3 style="font-family:'Inter',sans-serif;font-size:17px;font-weight:700;margin:0;color:#fff;">Driving Test</h3>
-        </div>
-        <div style="padding:24px;">
-          <p style="font-size:14px;color:#66666C;margin:0;line-height:1.6;">Mock tests and route practice so exam day feels like just another lesson.</p>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <section id="about" style="background:#FFFFFF;padding:clamp(48px,8vw,96px) 24px;">
-    <div style="max-width:1220px;margin:0 auto;display:flex;flex-wrap:wrap;align-items:center;gap:56px;">
-      <div style="flex:1 1 380px;min-width:300px;position:relative;height:440px;">
-        <img src="uploads/bennetts-images/02_about_instructor.jpg" alt="Bennetts driving instructor" loading="lazy" style="position:absolute;top:0;right:0;width:78%;height:80%;object-fit:cover;border-radius:4px;box-shadow:0 20px 40px rgba(17,18,24,0.18);" />
-        <img src="uploads/bennetts-images/24_gallery_06.jpg" alt="Student fastening seatbelt before a lesson" loading="lazy" style="position:absolute;bottom:0;left:0;width:54%;height:52%;object-fit:cover;border-radius:4px;border:6px solid #fff;box-shadow:0 16px 32px rgba(17,18,24,0.2);" />
-      </div>
-      <div style="flex:1 1 420px;min-width:300px;">
-        <div style="display:flex;align-items:center;gap:10px;margin-bottom:14px;">
+  <section id="coverage" style="background:#F7F7F7;padding:clamp(48px,8vw,96px) 24px;">
+    <div style="max-width:1280px;margin:0 auto;">
+      <div style="text-align:center;max-width:700px;margin:0 auto 44px;">
+        <div style="display:flex;align-items:center;justify-content:center;gap:12px;margin-bottom:14px;">
           <span style="width:28px;height:2px;background:#C8460D;"></span>
-          <span style="font-family:'Inter',sans-serif;font-weight:700;font-size:13px;letter-spacing:1px;color:#C8460D;text-transform:uppercase;">Get To Know Us</span>
+          <span style="font-family:'Inter',sans-serif;font-weight:700;font-size:13px;letter-spacing:1px;color:#C8460D;text-transform:uppercase;">Coverage</span>
+          <span style="width:28px;height:2px;background:#C8460D;"></span>
         </div>
-        <h2 style="font-family:'Inter',sans-serif;font-weight:800;font-size:clamp(28px,4vw,40px);line-height:1.15;margin:0 0 18px;color:#111218;">Ready to Learn Driving in Our Latest Model Vehicles</h2>
-        <p style="font-size:16px;line-height:1.7;color:#66666C;margin:0 0 28px;">Every lesson pairs you with an experienced instructor and a well-maintained, modern car, so you're learning good habits from day one, not fighting an unfamiliar vehicle.</p>
+        <h2 style="font-family:'Inter',sans-serif;font-weight:800;font-size:clamp(28px,4vw,40px);line-height:1.2;margin:0 0 16px;color:#111218;">Areas We Cover</h2>
+        <p style="font-size:16px;line-height:1.7;color:#66666C;margin:0;">Local instructors covering the routes and neighbourhoods your lessons are most likely to start, finish, and test through.</p>
+      </div>
 
-        <div style="display:flex;flex-direction:column;gap:0;margin-bottom:28px;">
-          <div style="display:flex;gap:18px;padding:0 0 20px;border-bottom:1px solid #E6E6E8;">
-            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#FC6620" stroke-width="1.7" style="flex-shrink:0;"><path d="M8 21h8"/><path d="M12 17v4"/><path d="M7 4h10v4a5 5 0 0 1-10 0V4Z"/><path d="M7 6H4a2 2 0 0 0 2 4"/><path d="M17 6h3a2 2 0 0 1-2 4"/></svg>
-            <div>
-              <h3 style="font-family:'Inter',sans-serif;font-size:17px;font-weight:700;margin:0 0 6px;color:#111218;">Award Winning Team</h3>
-              <p style="font-size:14px;color:#66666C;margin:0;line-height:1.6;">Recognized locally for instructor quality and consistently high first-time pass rates.</p>
-            </div>
-          </div>
-          <div style="display:flex;gap:18px;padding:20px 0 0;">
-            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#FC6620" stroke-width="1.7" style="flex-shrink:0;"><line x1="4" y1="20" x2="4" y2="12"/><line x1="10" y1="20" x2="10" y2="8"/><line x1="16" y1="20" x2="16" y2="14"/><line x1="20" y1="20" x2="20" y2="4"/></svg>
-            <div>
-              <h3 style="font-family:'Inter',sans-serif;font-size:17px;font-weight:700;margin:0 0 6px;color:#111218;">Highest Success Rates</h3>
-              <p style="font-size:14px;color:#66666C;margin:0;line-height:1.6;">Structured lesson plans built around what examiners actually test for.</p>
-            </div>
-          </div>
-        </div>
-
-        <a href="#about" style="display:inline-flex;align-items:center;justify-content:center;background:#111218;color:#fff;font-weight:700;font-size:15px;height:54px;padding:0 34px;border-radius:3px;">Get To Know Us</a>
+      <div style="display:flex;flex-wrap:wrap;gap:14px;justify-content:flex-start;max-width:900px;margin:0 auto;">
+        <span style="display:inline-flex;align-items:center;gap:8px;background:#fff;border:1px solid #E6E6E8;border-radius:8px;padding:13px 20px;font-family:'Inter',sans-serif;font-size:15px;font-weight:700;color:#111218;"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#FC6620" stroke-width="2"><path d="M12 21c-4.5-3.5-8-7.2-8-11.2A8 8 0 0 1 12 2a8 8 0 0 1 8 7.8c0 4-3.5 7.7-8 11.2Z"/><circle cx="12" cy="10" r="2.5"/></svg>Springfield</span>
+        <span style="display:inline-flex;align-items:center;gap:8px;background:#fff;border:1px solid #E6E6E8;border-radius:8px;padding:13px 20px;font-family:'Inter',sans-serif;font-size:15px;font-weight:700;color:#111218;"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#FC6620" stroke-width="2"><path d="M12 21c-4.5-3.5-8-7.2-8-11.2A8 8 0 0 1 12 2a8 8 0 0 1 8 7.8c0 4-3.5 7.7-8 11.2Z"/><circle cx="12" cy="10" r="2.5"/></svg>Riverside</span>
+        <span style="display:inline-flex;align-items:center;gap:8px;background:#fff;border:1px solid #E6E6E8;border-radius:8px;padding:13px 20px;font-family:'Inter',sans-serif;font-size:15px;font-weight:700;color:#111218;"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#FC6620" stroke-width="2"><path d="M12 21c-4.5-3.5-8-7.2-8-11.2A8 8 0 0 1 12 2a8 8 0 0 1 8 7.8c0 4-3.5 7.7-8 11.2Z"/><circle cx="12" cy="10" r="2.5"/></svg>Westfield</span>
+        <span style="display:inline-flex;align-items:center;gap:8px;background:#fff;border:1px solid #E6E6E8;border-radius:8px;padding:13px 20px;font-family:'Inter',sans-serif;font-size:15px;font-weight:700;color:#111218;"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#FC6620" stroke-width="2"><path d="M12 21c-4.5-3.5-8-7.2-8-11.2A8 8 0 0 1 12 2a8 8 0 0 1 8 7.8c0 4-3.5 7.7-8 11.2Z"/><circle cx="12" cy="10" r="2.5"/></svg>Oakridge</span>
+        <span style="display:inline-flex;align-items:center;gap:8px;background:#fff;border:1px solid #E6E6E8;border-radius:8px;padding:13px 20px;font-family:'Inter',sans-serif;font-size:15px;font-weight:700;color:#111218;"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#FC6620" stroke-width="2"><path d="M12 21c-4.5-3.5-8-7.2-8-11.2A8 8 0 0 1 12 2a8 8 0 0 1 8 7.8c0 4-3.5 7.7-8 11.2Z"/><circle cx="12" cy="10" r="2.5"/></svg>Brookside</span>
+        <span style="display:inline-flex;align-items:center;gap:8px;background:#fff;border:1px solid #E6E6E8;border-radius:8px;padding:13px 20px;font-family:'Inter',sans-serif;font-size:15px;font-weight:700;color:#111218;"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#FC6620" stroke-width="2"><path d="M12 21c-4.5-3.5-8-7.2-8-11.2A8 8 0 0 1 12 2a8 8 0 0 1 8 7.8c0 4-3.5 7.7-8 11.2Z"/><circle cx="12" cy="10" r="2.5"/></svg>Easton</span>
+        <span style="display:inline-flex;align-items:center;gap:8px;background:#fff;border:1px solid #E6E6E8;border-radius:8px;padding:13px 20px;font-family:'Inter',sans-serif;font-size:15px;font-weight:700;color:#111218;"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#FC6620" stroke-width="2"><path d="M12 21c-4.5-3.5-8-7.2-8-11.2A8 8 0 0 1 12 2a8 8 0 0 1 8 7.8c0 4-3.5 7.7-8 11.2Z"/><circle cx="12" cy="10" r="2.5"/></svg>Hillcrest</span>
+        <span style="display:inline-flex;align-items:center;gap:8px;background:#fff;border:1px solid #E6E6E8;border-radius:8px;padding:13px 20px;font-family:'Inter',sans-serif;font-size:15px;font-weight:700;color:#111218;"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#FC6620" stroke-width="2"><path d="M12 21c-4.5-3.5-8-7.2-8-11.2A8 8 0 0 1 12 2a8 8 0 0 1 8 7.8c0 4-3.5 7.7-8 11.2Z"/><circle cx="12" cy="10" r="2.5"/></svg>Meadow Park</span>
+        <span style="display:inline-flex;align-items:center;gap:8px;background:#fff;border:1px solid #E6E6E8;border-radius:8px;padding:13px 20px;font-family:'Inter',sans-serif;font-size:15px;font-weight:700;color:#111218;"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#FC6620" stroke-width="2"><path d="M12 21c-4.5-3.5-8-7.2-8-11.2A8 8 0 0 1 12 2a8 8 0 0 1 8 7.8c0 4-3.5 7.7-8 11.2Z"/><circle cx="12" cy="10" r="2.5"/></svg>Lakeside</span>
+        <span style="display:inline-flex;align-items:center;gap:8px;background:#fff;border:1px solid #E6E6E8;border-radius:8px;padding:13px 20px;font-family:'Inter',sans-serif;font-size:15px;font-weight:700;color:#111218;"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#FC6620" stroke-width="2"><path d="M12 21c-4.5-3.5-8-7.2-8-11.2A8 8 0 0 1 12 2a8 8 0 0 1 8 7.8c0 4-3.5 7.7-8 11.2Z"/><circle cx="12" cy="10" r="2.5"/></svg>Northgate</span>
+        <span style="display:inline-flex;align-items:center;gap:8px;background:#fff;border:1px solid #E6E6E8;border-radius:8px;padding:13px 20px;font-family:'Inter',sans-serif;font-size:15px;font-weight:700;color:#111218;"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#FC6620" stroke-width="2"><path d="M12 21c-4.5-3.5-8-7.2-8-11.2A8 8 0 0 1 12 2a8 8 0 0 1 8 7.8c0 4-3.5 7.7-8 11.2Z"/><circle cx="12" cy="10" r="2.5"/></svg>Fairview</span>
+        <span style="display:inline-flex;align-items:center;gap:8px;background:#fff;border:1px solid #E6E6E8;border-radius:8px;padding:13px 20px;font-family:'Inter',sans-serif;font-size:15px;font-weight:700;color:#111218;"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#FC6620" stroke-width="2"><path d="M12 21c-4.5-3.5-8-7.2-8-11.2A8 8 0 0 1 12 2a8 8 0 0 1 8 7.8c0 4-3.5 7.7-8 11.2Z"/><circle cx="12" cy="10" r="2.5"/></svg>Maple Grove</span>
+        <span style="display:inline-flex;align-items:center;gap:8px;background:#fff;border:1px solid #E6E6E8;border-radius:8px;padding:13px 20px;font-family:'Inter',sans-serif;font-size:15px;font-weight:700;color:#111218;"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#FC6620" stroke-width="2"><path d="M12 21c-4.5-3.5-8-7.2-8-11.2A8 8 0 0 1 12 2a8 8 0 0 1 8 7.8c0 4-3.5 7.7-8 11.2Z"/><circle cx="12" cy="10" r="2.5"/></svg>Greendale</span>
+        <span style="display:inline-flex;align-items:center;gap:8px;background:#fff;border:1px solid #E6E6E8;border-radius:8px;padding:13px 20px;font-family:'Inter',sans-serif;font-size:15px;font-weight:700;color:#111218;"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#FC6620" stroke-width="2"><path d="M12 21c-4.5-3.5-8-7.2-8-11.2A8 8 0 0 1 12 2a8 8 0 0 1 8 7.8c0 4-3.5 7.7-8 11.2Z"/><circle cx="12" cy="10" r="2.5"/></svg>Ashford</span>
+        <span style="display:inline-flex;align-items:center;gap:8px;background:#fff;border:1px solid #E6E6E8;border-radius:8px;padding:13px 20px;font-family:'Inter',sans-serif;font-size:15px;font-weight:700;color:#111218;"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#FC6620" stroke-width="2"><path d="M12 21c-4.5-3.5-8-7.2-8-11.2A8 8 0 0 1 12 2a8 8 0 0 1 8 7.8c0 4-3.5 7.7-8 11.2Z"/><circle cx="12" cy="10" r="2.5"/></svg>Bridgewater</span>
+        <span style="display:inline-flex;align-items:center;gap:8px;background:#fff;border:1px solid #E6E6E8;border-radius:8px;padding:13px 20px;font-family:'Inter',sans-serif;font-size:15px;font-weight:700;color:#111218;"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#FC6620" stroke-width="2"><path d="M12 21c-4.5-3.5-8-7.2-8-11.2A8 8 0 0 1 12 2a8 8 0 0 1 8 7.8c0 4-3.5 7.7-8 11.2Z"/><circle cx="12" cy="10" r="2.5"/></svg>Clearview</span>
+        <span style="display:inline-flex;align-items:center;gap:8px;background:#fff;border:1px solid #E6E6E8;border-radius:8px;padding:13px 20px;font-family:'Inter',sans-serif;font-size:15px;font-weight:700;color:#111218;"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#FC6620" stroke-width="2"><path d="M12 21c-4.5-3.5-8-7.2-8-11.2A8 8 0 0 1 12 2a8 8 0 0 1 8 7.8c0 4-3.5 7.7-8 11.2Z"/><circle cx="12" cy="10" r="2.5"/></svg>Dunmore</span>
+        <span style="display:inline-flex;align-items:center;gap:8px;background:#fff;border:1px solid #E6E6E8;border-radius:8px;padding:13px 20px;font-family:'Inter',sans-serif;font-size:15px;font-weight:700;color:#111218;"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#FC6620" stroke-width="2"><path d="M12 21c-4.5-3.5-8-7.2-8-11.2A8 8 0 0 1 12 2a8 8 0 0 1 8 7.8c0 4-3.5 7.7-8 11.2Z"/><circle cx="12" cy="10" r="2.5"/></svg>Elmwood</span>
+        <span style="display:inline-flex;align-items:center;gap:8px;background:#fff;border:1px solid #E6E6E8;border-radius:8px;padding:13px 20px;font-family:'Inter',sans-serif;font-size:15px;font-weight:700;color:#111218;"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#FC6620" stroke-width="2"><path d="M12 21c-4.5-3.5-8-7.2-8-11.2A8 8 0 0 1 12 2a8 8 0 0 1 8 7.8c0 4-3.5 7.7-8 11.2Z"/><circle cx="12" cy="10" r="2.5"/></svg>Foxhollow</span>
+        <span style="display:inline-flex;align-items:center;gap:8px;background:#fff;border:1px solid #E6E6E8;border-radius:8px;padding:13px 20px;font-family:'Inter',sans-serif;font-size:15px;font-weight:700;color:#111218;"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#FC6620" stroke-width="2"><path d="M12 21c-4.5-3.5-8-7.2-8-11.2A8 8 0 0 1 12 2a8 8 0 0 1 8 7.8c0 4-3.5 7.7-8 11.2Z"/><circle cx="12" cy="10" r="2.5"/></svg>Glenbrook</span>
+        <span style="display:inline-flex;align-items:center;gap:8px;background:#fff;border:1px solid #E6E6E8;border-radius:8px;padding:13px 20px;font-family:'Inter',sans-serif;font-size:15px;font-weight:700;color:#111218;"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#FC6620" stroke-width="2"><path d="M12 21c-4.5-3.5-8-7.2-8-11.2A8 8 0 0 1 12 2a8 8 0 0 1 8 7.8c0 4-3.5 7.7-8 11.2Z"/><circle cx="12" cy="10" r="2.5"/></svg>Harborview</span>
+        <span style="display:inline-flex;align-items:center;gap:8px;background:#fff;border:1px solid #E6E6E8;border-radius:8px;padding:13px 20px;font-family:'Inter',sans-serif;font-size:15px;font-weight:700;color:#111218;"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#FC6620" stroke-width="2"><path d="M12 21c-4.5-3.5-8-7.2-8-11.2A8 8 0 0 1 12 2a8 8 0 0 1 8 7.8c0 4-3.5 7.7-8 11.2Z"/><circle cx="12" cy="10" r="2.5"/></svg>Ivywood</span>
+        <span style="display:inline-flex;align-items:center;gap:8px;background:#fff;border:1px solid #E6E6E8;border-radius:8px;padding:13px 20px;font-family:'Inter',sans-serif;font-size:15px;font-weight:700;color:#111218;"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#FC6620" stroke-width="2"><path d="M12 21c-4.5-3.5-8-7.2-8-11.2A8 8 0 0 1 12 2a8 8 0 0 1 8 7.8c0 4-3.5 7.7-8 11.2Z"/><circle cx="12" cy="10" r="2.5"/></svg>Kingsley</span>
+        <span style="display:inline-flex;align-items:center;padding:13px 6px;font-family:'Inter',sans-serif;font-size:13px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:#9E9EA5;">&amp; More</span>
       </div>
     </div>
   </section>
-
 
   <section id="blog" style="background:#FFFFFF;padding:clamp(48px,8vw,96px) 24px;">
-    <div style="max-width:1220px;margin:0 auto;">
+    <div style="max-width:1280px;margin:0 auto;">
       <div style="text-align:center;max-width:640px;margin:0 auto 48px;">
         <span style="font-family:'Inter',sans-serif;font-weight:700;font-size:13px;letter-spacing:1px;color:#C8460D;text-transform:uppercase;">Articles</span>
         <h2 style="font-family:'Inter',sans-serif;font-weight:800;font-size:clamp(28px,4vw,40px);line-height:1.2;margin:14px 0 0;color:#111218;">Latest News &amp; Advice from the Blog</h2>
@@ -621,9 +533,10 @@
   </section>
 
   <section id="contact" style="background:#111218;">
-    <div style="max-width:1220px;margin:0 auto;display:flex;flex-wrap:wrap;">
-      <div style="flex:1 1 480px;min-width:300px;position:relative;padding:clamp(48px,7vw,80px) 24px;">
-        <img src="uploads/bennetts-images/09_course_author_or_testimonial_2.jpg" alt="" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0.14;" />
+    <div style="max-width:1280px;margin:0 auto;display:flex;flex-wrap:wrap;">
+      <div style="flex:1 1 480px;min-width:300px;position:relative;padding:clamp(48px,7vw,80px) 24px;overflow:hidden;">
+        <div style="position:absolute;top:-40px;right:-40px;width:220px;height:220px;background-image:radial-gradient(rgba(252,102,32,0.35) 2px, transparent 2px);background-size:18px 18px;opacity:0.8;"></div>
+        <div style="position:absolute;bottom:-60px;left:-30px;width:180px;height:180px;border-radius:50%;border:1px solid rgba(255,255,255,0.08);"></div>
         <div style="position:relative;">
           <span style="font-family:'Inter',sans-serif;font-weight:700;font-size:13px;letter-spacing:1px;color:#FC6620;text-transform:uppercase;">Get In Touch</span>
           <h2 style="font-family:'Inter',sans-serif;font-weight:800;font-size:clamp(26px,3.6vw,38px);line-height:1.25;margin:14px 0 30px;color:#fff;max-width:420px;">Feel Free to Write us Anytime</h2>
@@ -662,26 +575,57 @@
           <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#111218" stroke-width="1.8" style="flex-shrink:0;"><path d="M12 22s7-7.2 7-12.5A7 7 0 0 0 5 9.5C5 14.8 12 22 12 22Z"/><circle cx="12" cy="9.5" r="2.5"/></svg>
           <span style="font-family:'Inter',sans-serif;font-weight:700;font-size:19px;color:#111218;line-height:1.3;">482 Ravenswood Ave, Springfield, IL 62704</span>
         </div>
-        <iframe title="Bennetts Driving School location map" src="https://maps.google.com/maps?q=Springfield%2C%20IL&z=12&output=embed" loading="lazy" style="border:0;width:100%;flex:1;min-height:320px;"></iframe>
+        <div style="background:#1A1B21;flex:1;min-height:320px;padding:36px 32px;display:flex;flex-direction:column;gap:24px;justify-content:center;">
+          <div style="display:flex;align-items:flex-start;gap:16px;">
+            <span style="width:44px;height:44px;border-radius:50%;background:rgba(252,102,32,0.14);display:flex;align-items:center;justify-content:center;flex-shrink:0;">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#FC6620" stroke-width="1.8"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92Z"/></svg>
+            </span>
+            <div>
+              <div style="font-family:'Inter',sans-serif;font-weight:700;font-size:16px;color:#fff;margin-bottom:2px;">(555) 010-2938</div>
+              <div style="font-size:13px;color:#9E9EA5;">Mon &ndash; Sat, 8:00am &ndash; 6:00pm</div>
+            </div>
+          </div>
+          <div style="height:1px;background:#2B2C33;"></div>
+          <div style="display:flex;align-items:flex-start;gap:16px;">
+            <span style="width:44px;height:44px;border-radius:50%;background:rgba(252,102,32,0.14);display:flex;align-items:center;justify-content:center;flex-shrink:0;">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#FC6620" stroke-width="1.8"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+            </span>
+            <div>
+              <div style="font-family:'Inter',sans-serif;font-weight:700;font-size:16px;color:#fff;margin-bottom:2px;">hello@bennettsdrivingschool.com</div>
+              <div style="font-size:13px;color:#9E9EA5;">We usually reply within one business day</div>
+            </div>
+          </div>
+          <div style="height:1px;background:#2B2C33;"></div>
+          <div style="display:flex;align-items:flex-start;gap:16px;">
+            <span style="width:44px;height:44px;border-radius:50%;background:rgba(252,102,32,0.14);display:flex;align-items:center;justify-content:center;flex-shrink:0;">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#FC6620" stroke-width="1.8"><path d="M12 21c-4.5-3.5-8-7.2-8-11.2A8 8 0 0 1 12 2a8 8 0 0 1 8 7.8c0 4-3.5 7.7-8 11.2Z"/><circle cx="12" cy="10" r="2.5"/></svg>
+            </span>
+            <div>
+              <div style="font-family:'Inter',sans-serif;font-weight:700;font-size:16px;color:#fff;margin-bottom:2px;">Serving Springfield &amp; Surrounding Areas</div>
+              <div style="font-size:13px;color:#9E9EA5;">See our full coverage area above</div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
-  <section style="position:relative;background:#F7F7F7;padding:clamp(48px,8vw,88px) 24px;overflow:hidden;">
+  <section style="position:relative;background:#F7F7F7;padding:clamp(48px,8vw,88px) 24px 0;">
     <div style="position:absolute;top:0;left:38%;width:160px;height:100%;background:#FC6620;opacity:0.9;clip-path:polygon(40% 0,60% 0,20% 100%,0 100%);"></div>
-    <div style="max-width:1220px;margin:0 auto;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:32px;position:relative;">
-      <div style="flex:1 1 300px;min-width:240px;display:flex;justify-content:center;">
-        <img src="uploads/bennetts-images/18_cta_white_car.png" alt="White sedan available for lessons" loading="lazy" style="width:100%;max-width:400px;height:auto;object-fit:contain;" />
+    <div style="max-width:1280px;margin:0 auto;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:32px;position:relative;">
+      <div style="flex:1 1 340px;min-width:260px;display:flex;justify-content:center;position:relative;z-index:2;margin-bottom:-64px;">
+        <img src="uploads/bennetts-images/33_cta_footer_car.png" alt="Bennetts branded driving school car" loading="lazy" style="width:100%;max-width:540px;height:auto;object-fit:contain;filter:drop-shadow(0 24px 20px rgba(0,0,0,0.25));" />
       </div>
-      <div style="flex:1 1 340px;min-width:280px;text-align:right;">
-        <h2 style="font-family:'Inter',sans-serif;font-weight:800;font-size:clamp(26px,3.6vw,38px);line-height:1.25;margin:0 0 26px;color:#111218;">Book Your First Driving Lesson Today</h2>
+      <div style="flex:1 1 340px;min-width:280px;text-align:right;padding-bottom:clamp(48px,8vw,88px);">
+        <h2 style="font-family:'Inter',sans-serif;font-weight:800;font-size:clamp(26px,3.6vw,38px);line-height:1.25;margin:0 0 16px;color:#111218;">Book Your First Driving Lesson Today</h2>
+        <p style="font-size:16px;line-height:1.7;color:#66666C;margin:0 0 26px;max-width:420px;margin-left:auto;">Pick a time that works for you and we'll pair you with an instructor and car near you. No deposit needed to book your first lesson.</p>
         <a href="#contact" style="display:inline-flex;align-items:center;justify-content:center;background:#FC6620;color:#111218;font-weight:700;font-size:15px;height:54px;padding:0 40px;border-radius:3px;">Book Now</a>
       </div>
     </div>
   </section>
 
   <footer style="background:#1A1B21;padding:clamp(48px,7vw,80px) 24px 0;">
-    <div style="max-width:1220px;margin:0 auto;">
+    <div style="max-width:1280px;margin:0 auto;">
       <div style="display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:20px;padding-bottom:36px;border-bottom:1px solid #2B2C33;">
         <div style="display:flex;align-items:center;">
           <img src="uploads/bennetts-images/logo.jpg" alt="Bennetts Driving School" style="height:40px;width:auto;display:block;" />
@@ -751,24 +695,75 @@
   &quot;showMobileActionBar&quot;: { &quot;editor&quot;: &quot;boolean&quot;, &quot;default&quot;: true, &quot;tsType&quot;: &quot;boolean&quot;, &quot;section&quot;: &quot;Layout&quot; }
 }">
 class Component extends DCLogic {
-  state = { mobileOpen: false, isMobile: false, scrolled: false };
+  state = { mobileOpen: false, isMobile: false, scrolled: false, ctaParallaxOffset: -10, servicesSlide: 0, servicesCardWidth: 280 };
 
   componentDidMount() {
     this.checkWidth();
+    this.ctaParallaxEl = document.getElementById('bds-cta-parallax');
     window.addEventListener('resize', this.checkWidth);
     window.addEventListener('scroll', this.onScroll, { passive: true });
+    this.updateCtaParallax();
+    this.measureServicesWidth();
+    window.addEventListener('resize', this.measureServicesWidth);
+    this.startServicesAutoplay();
   }
   componentWillUnmount() {
     window.removeEventListener('resize', this.checkWidth);
     window.removeEventListener('scroll', this.onScroll);
+    window.removeEventListener('resize', this.measureServicesWidth);
+    this.stopServicesAutoplay();
+    if (this.parallaxFrame) window.cancelAnimationFrame(this.parallaxFrame);
   }
+  measureServicesWidth = () => {
+    const el = document.getElementById('bds-services-viewport');
+    if (!el) return;
+    const gap = 24;
+    const cardWidth = (el.clientWidth - gap * 3) / 4;
+    if (cardWidth > 0 && Math.abs(cardWidth - this.state.servicesCardWidth) > 0.5) {
+      this.setState({ servicesCardWidth: cardWidth });
+    }
+  };
+  startServicesAutoplay = () => {
+    this.stopServicesAutoplay();
+    this.servicesInterval = window.setInterval(() => {
+      this.setState(s => ({ servicesSlide: s.servicesSlide >= 4 ? 0 : s.servicesSlide + 1 }));
+    }, 2800);
+  };
+  stopServicesAutoplay = () => {
+    if (this.servicesInterval) {
+      window.clearInterval(this.servicesInterval);
+      this.servicesInterval = null;
+    }
+  };
   checkWidth = () => {
     const isMobile = window.innerWidth < 880;
-    if (isMobile !== this.state.isMobile) this.setState({ isMobile, mobileOpen: false });
+    if (isMobile !== this.state.isMobile) this.setState({ isMobile, mobileOpen: false }, this.updateCtaParallax);
   };
   onScroll = () => {
     const scrolled = window.scrollY > 16;
     if (scrolled !== this.state.scrolled) this.setState({ scrolled });
+    if (!this.parallaxFrame) {
+      this.parallaxFrame = window.requestAnimationFrame(() => {
+        this.parallaxFrame = null;
+        this.updateCtaParallax();
+      });
+    }
+  };
+  updateCtaParallax = () => {
+    if (!this.ctaParallaxEl) this.ctaParallaxEl = document.getElementById('bds-cta-parallax');
+    if (!this.ctaParallaxEl) return;
+    if (this.state.isMobile) {
+      if (this.state.ctaParallaxOffset !== -10) this.setState({ ctaParallaxOffset: -10 });
+      return;
+    }
+    const rect = this.ctaParallaxEl.getBoundingClientRect();
+    const viewportCenter = window.innerHeight / 2;
+    const sectionCenter = rect.top + rect.height / 2;
+    const distanceFromCenter = sectionCenter - viewportCenter;
+    const nextOffset = Math.max(-64, Math.min(64, distanceFromCenter * -0.12 - 12));
+    if (Math.abs(nextOffset - this.state.ctaParallaxOffset) > 0.5) {
+      this.setState({ ctaParallaxOffset: nextOffset });
+    }
   };
 
   renderVals() {
@@ -802,12 +797,35 @@ class Component extends DCLogic {
       isMobile, mobileOpen,
       toggleMobile: () => this.setState(s => ({ mobileOpen: !s.mobileOpen })),
       closeMobile: () => this.setState({ mobileOpen: false }),
+      servicesSlide: this.state.servicesSlide,
+      servicesPrev: () => { this.setState(s => ({ servicesSlide: s.servicesSlide <= 0 ? 4 : s.servicesSlide - 1 })); this.startServicesAutoplay(); },
+      servicesNext: () => { this.setState(s => ({ servicesSlide: s.servicesSlide >= 4 ? 0 : s.servicesSlide + 1 })); this.startServicesAutoplay(); },
+      servicesTrackStyle: { display: 'flex', gap: '24px', transition: 'transform 0.4s ease', transform: `translateX(-${this.state.servicesSlide * (this.state.servicesCardWidth + 24)}px)` },
+      servicesCardStyle: { flex: `0 0 ${this.state.servicesCardWidth}px`, width: `${this.state.servicesCardWidth}px`, background: '#fff', border: '1px solid #E6E6E8', borderRadius: '3px', boxShadow: '0 6px 18px rgba(17,18,24,0.04)', overflow: 'hidden' },
+      servicesPrevBtnStyle: { width: '44px', height: '44px', borderRadius: '50%', border: '1px solid #E6E6E8', background: '#fff', display: 'inline-flex', alignItems: 'center', justifyContent: 'center', cursor: 'pointer' },
+      servicesNextBtnStyle: { width: '44px', height: '44px', borderRadius: '50%', border: '1px solid #E6E6E8', background: '#fff', display: 'inline-flex', alignItems: 'center', justifyContent: 'center', cursor: 'pointer' },
       navBarStyle: { position: 'sticky', top: 0, zIndex: 40, background: '#111218', boxShadow: this.state.scrolled ? '0 8px 24px rgba(0,0,0,0.25)' : 'none' },
       navLinksStyle: { display: isMobile ? 'none' : 'flex', alignItems: 'center', gap: '32px' },
       headerCtaStyle: { display: isMobile ? 'none' : 'inline-flex', background: '#FC6620', color: '#111218', fontWeight: 700, fontSize: '15px', padding: '0 28px', height: '50px', borderRadius: '3px', alignItems: 'center', whiteSpace: 'nowrap' },
       hamburgerStyle: { display: isMobile ? 'inline-flex' : 'none', width: '44px', height: '44px', borderRadius: '3px', background: '#1A1B21', border: '1px solid #2B2C33', alignItems: 'center', justifyContent: 'center', flexDirection: 'column', gap: '4px' },
       mobileMenuStyle: { display: (isMobile && mobileOpen) ? 'flex' : 'none', flexDirection: 'column', background: '#111218', borderTop: '1px solid #26272E', padding: '12px 24px 20px', gap: '4px' },
       mobileBarStyle: { display: (isMobile && showMobileActionBar) ? 'flex' : 'none', position: 'fixed', left: 0, right: 0, bottom: 0, background: '#111218', padding: '10px 16px', gap: '10px', zIndex: 50, boxShadow: '0 -4px 16px rgba(0,0,0,0.3)' },
+      ctaSectionStyle: {
+        position: 'relative',
+        backgroundColor: '#111218',
+        padding: 'clamp(56px,9vw,110px) 24px',
+        overflow: 'hidden',
+      },
+      ctaParallaxMediaStyle: {
+        position: 'absolute',
+        inset: '-18% 0',
+        backgroundImage: "url('uploads/bennetts-images/25_bennetts_grid.jpg')",
+        backgroundPosition: 'center center',
+        backgroundSize: 'cover',
+        backgroundRepeat: 'no-repeat',
+        transform: `translate3d(0, ${this.state.ctaParallaxOffset}px, 0) scale(1.08)`,
+        willChange: isMobile ? 'auto' : 'transform',
+      },
       testimonialSectionBg: testimonialStyle === 'dark' ? '#111218' : '#FC6620',
       testimonialEyebrowColor: testimonialStyle === 'dark' ? '#FC6620' : '#8a3106',
       heroRowDirection: heroCarSide === 'left' ? 'row-reverse' : 'row',
