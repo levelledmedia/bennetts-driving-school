@@ -25,7 +25,7 @@
   .bds-service-card { transition: transform 0.25s ease, box-shadow 0.25s ease; }
   .bds-service-card:hover { transform: translateY(-6px); box-shadow: 0 16px 32px rgba(17,18,24,0.1) !important; }
   .bds-service-card .bds-learn-more { transition: background 0.25s ease, border-color 0.25s ease, color 0.25s ease; }
-  .bds-service-card:hover .bds-learn-more { background: #111218; border-color: #111218; color: #fff; }
+  .bds-service-card:hover .bds-learn-more { background: #111218 !important; border-color: #111218 !important; color: #fff !important; }
   @keyframes bdsFadeUp { from { opacity: 0; transform: translateY(16px); } to { opacity: 1; transform: translateY(0); } }
 </style>
 </helmet>
@@ -460,28 +460,58 @@
     </div>
   </section>
 
-  <section id="coverage-v2" style="background:#FFFFFF;padding:clamp(48px,8vw,96px) 24px;">
-    <div style="max-width:1280px;margin:0 auto;display:flex;flex-wrap:wrap;align-items:center;gap:56px;">
+  <section id="coverage-v2" style="position:relative;background:#FFFFFF;padding:clamp(48px,8vw,96px) 24px;overflow:hidden;">
+    <div style="max-width:1280px;margin:0 auto;display:flex;flex-wrap:wrap;align-items:center;gap:56px;position:relative;">
       <div style="flex:1 1 380px;min-width:300px;">
         <div style="margin-bottom:14px;">
           <span style="font-family:'Inter',sans-serif;font-weight:700;font-size:13px;letter-spacing:1px;color:#C8460D;text-transform:uppercase;">Coverage</span>
         </div>
         <h2 style="font-family:'Inter',sans-serif;font-weight:800;font-size:clamp(28px,4vw,40px);line-height:1.2;margin:0 0 18px;color:#111218;">Areas We Cover</h2>
         <p style="font-size:16px;line-height:1.7;color:#66666C;margin:0 0 28px;max-width:460px;">Local instructors covering the routes and neighbourhoods your lessons are most likely to start, finish, and test through. Wherever you're based across the area, we'll match you with an instructor who already knows your local roads and test routes inside out.</p>
+
+        <div style="display:flex;flex-wrap:wrap;gap:32px;margin-bottom:32px;">
+          <div>
+            <div style="font-family:'Inter',sans-serif;font-weight:800;font-size:30px;color:#111218;">22+</div>
+            <div style="font-size:13px;color:#66666C;margin-top:2px;">Areas Covered</div>
+          </div>
+          <div>
+            <div style="font-family:'Inter',sans-serif;font-weight:800;font-size:30px;color:#111218;">15</div>
+            <div style="font-size:13px;color:#66666C;margin-top:2px;">Local Instructors</div>
+          </div>
+          <div>
+            <div style="font-family:'Inter',sans-serif;font-weight:800;font-size:30px;color:#111218;">10mi</div>
+            <div style="font-size:13px;color:#66666C;margin-top:2px;">Avg. Pickup Radius</div>
+          </div>
+        </div>
+
         <a href="#contact" style="display:inline-flex;align-items:center;justify-content:center;background:#111218;color:#fff;font-weight:700;font-size:15px;height:58px;padding:0 38px;border-radius:3px;">Check Your Area</a>
       </div>
-      <div style="flex:1.1 1 420px;min-width:300px;">
-        <div style="display:flex;flex-wrap:wrap;gap:12px;">
-          <span style="display:inline-flex;align-items:center;gap:8px;background:#F7F7F7;border:1px solid #E6E6E8;border-radius:8px;padding:12px 18px;font-family:'Inter',sans-serif;font-size:14px;font-weight:700;color:#111218;"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#FC6620" stroke-width="2"><path d="M12 21c-4.5-3.5-8-7.2-8-11.2A8 8 0 0 1 12 2a8 8 0 0 1 8 7.8c0 4-3.5 7.7-8 11.2Z"/><circle cx="12" cy="10" r="2.5"/></svg>Springfield</span>
-          <span style="display:inline-flex;align-items:center;gap:8px;background:#F7F7F7;border:1px solid #E6E6E8;border-radius:8px;padding:12px 18px;font-family:'Inter',sans-serif;font-size:14px;font-weight:700;color:#111218;"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#FC6620" stroke-width="2"><path d="M12 21c-4.5-3.5-8-7.2-8-11.2A8 8 0 0 1 12 2a8 8 0 0 1 8 7.8c0 4-3.5 7.7-8 11.2Z"/><circle cx="12" cy="10" r="2.5"/></svg>Riverside</span>
-          <span style="display:inline-flex;align-items:center;gap:8px;background:#F7F7F7;border:1px solid #E6E6E8;border-radius:8px;padding:12px 18px;font-family:'Inter',sans-serif;font-size:14px;font-weight:700;color:#111218;"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#FC6620" stroke-width="2"><path d="M12 21c-4.5-3.5-8-7.2-8-11.2A8 8 0 0 1 12 2a8 8 0 0 1 8 7.8c0 4-3.5 7.7-8 11.2Z"/><circle cx="12" cy="10" r="2.5"/></svg>Westfield</span>
-          <span style="display:inline-flex;align-items:center;gap:8px;background:#F7F7F7;border:1px solid #E6E6E8;border-radius:8px;padding:12px 18px;font-family:'Inter',sans-serif;font-size:14px;font-weight:700;color:#111218;"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#FC6620" stroke-width="2"><path d="M12 21c-4.5-3.5-8-7.2-8-11.2A8 8 0 0 1 12 2a8 8 0 0 1 8 7.8c0 4-3.5 7.7-8 11.2Z"/><circle cx="12" cy="10" r="2.5"/></svg>Oakridge</span>
-          <span style="display:inline-flex;align-items:center;gap:8px;background:#F7F7F7;border:1px solid #E6E6E8;border-radius:8px;padding:12px 18px;font-family:'Inter',sans-serif;font-size:14px;font-weight:700;color:#111218;"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#FC6620" stroke-width="2"><path d="M12 21c-4.5-3.5-8-7.2-8-11.2A8 8 0 0 1 12 2a8 8 0 0 1 8 7.8c0 4-3.5 7.7-8 11.2Z"/><circle cx="12" cy="10" r="2.5"/></svg>Brookside</span>
-          <span style="display:inline-flex;align-items:center;gap:8px;background:#F7F7F7;border:1px solid #E6E6E8;border-radius:8px;padding:12px 18px;font-family:'Inter',sans-serif;font-size:14px;font-weight:700;color:#111218;"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#FC6620" stroke-width="2"><path d="M12 21c-4.5-3.5-8-7.2-8-11.2A8 8 0 0 1 12 2a8 8 0 0 1 8 7.8c0 4-3.5 7.7-8 11.2Z"/><circle cx="12" cy="10" r="2.5"/></svg>Easton</span>
-          <span style="display:inline-flex;align-items:center;gap:8px;background:#F7F7F7;border:1px solid #E6E6E8;border-radius:8px;padding:12px 18px;font-family:'Inter',sans-serif;font-size:14px;font-weight:700;color:#111218;"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#FC6620" stroke-width="2"><path d="M12 21c-4.5-3.5-8-7.2-8-11.2A8 8 0 0 1 12 2a8 8 0 0 1 8 7.8c0 4-3.5 7.7-8 11.2Z"/><circle cx="12" cy="10" r="2.5"/></svg>Hillcrest</span>
-          <span style="display:inline-flex;align-items:center;gap:8px;background:#F7F7F7;border:1px solid #E6E6E8;border-radius:8px;padding:12px 18px;font-family:'Inter',sans-serif;font-size:14px;font-weight:700;color:#111218;"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#FC6620" stroke-width="2"><path d="M12 21c-4.5-3.5-8-7.2-8-11.2A8 8 0 0 1 12 2a8 8 0 0 1 8 7.8c0 4-3.5 7.7-8 11.2Z"/><circle cx="12" cy="10" r="2.5"/></svg>Meadow Park</span>
-          <span style="display:inline-flex;align-items:center;gap:8px;background:#F7F7F7;border:1px solid #E6E6E8;border-radius:8px;padding:12px 18px;font-family:'Inter',sans-serif;font-size:14px;font-weight:700;color:#111218;"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#FC6620" stroke-width="2"><path d="M12 21c-4.5-3.5-8-7.2-8-11.2A8 8 0 0 1 12 2a8 8 0 0 1 8 7.8c0 4-3.5 7.7-8 11.2Z"/><circle cx="12" cy="10" r="2.5"/></svg>Lakeside</span>
-          <span style="display:inline-flex;align-items:center;gap:8px;background:#F7F7F7;border:1px solid #E6E6E8;border-radius:8px;padding:12px 18px;font-family:'Inter',sans-serif;font-size:14px;font-weight:700;color:#111218;"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#FC6620" stroke-width="2"><path d="M12 21c-4.5-3.5-8-7.2-8-11.2A8 8 0 0 1 12 2a8 8 0 0 1 8 7.8c0 4-3.5 7.7-8 11.2Z"/><circle cx="12" cy="10" r="2.5"/></svg>Northgate</span>
+      <div style="flex:1.1 1 420px;min-width:300px;position:relative;">
+        <img src="uploads/bennetts-images/37_uk_silhouette.svg" alt="" aria-hidden="true" loading="lazy" style="position:absolute;top:50%;left:50%;width:150%;max-width:none;height:auto;transform:translate(-50%,-50%);opacity:0.5;z-index:0;pointer-events:none;" />
+        <div style="position:relative;z-index:1;display:flex;flex-wrap:wrap;gap:12px;">
+          <span style="display:inline-flex;align-items:center;gap:8px;background:#fff;border:1px solid #E6E6E8;border-radius:8px;padding:12px 18px;font-family:'Inter',sans-serif;font-size:14px;font-weight:700;color:#111218;box-shadow:0 4px 12px rgba(17,18,24,0.05);"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#FC6620" stroke-width="2"><path d="M12 21c-4.5-3.5-8-7.2-8-11.2A8 8 0 0 1 12 2a8 8 0 0 1 8 7.8c0 4-3.5 7.7-8 11.2Z"/><circle cx="12" cy="10" r="2.5"/></svg>Springfield</span>
+          <span style="display:inline-flex;align-items:center;gap:8px;background:#fff;border:1px solid #E6E6E8;border-radius:8px;padding:12px 18px;font-family:'Inter',sans-serif;font-size:14px;font-weight:700;color:#111218;box-shadow:0 4px 12px rgba(17,18,24,0.05);"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#FC6620" stroke-width="2"><path d="M12 21c-4.5-3.5-8-7.2-8-11.2A8 8 0 0 1 12 2a8 8 0 0 1 8 7.8c0 4-3.5 7.7-8 11.2Z"/><circle cx="12" cy="10" r="2.5"/></svg>Riverside</span>
+          <span style="display:inline-flex;align-items:center;gap:8px;background:#fff;border:1px solid #E6E6E8;border-radius:8px;padding:12px 18px;font-family:'Inter',sans-serif;font-size:14px;font-weight:700;color:#111218;box-shadow:0 4px 12px rgba(17,18,24,0.05);"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#FC6620" stroke-width="2"><path d="M12 21c-4.5-3.5-8-7.2-8-11.2A8 8 0 0 1 12 2a8 8 0 0 1 8 7.8c0 4-3.5 7.7-8 11.2Z"/><circle cx="12" cy="10" r="2.5"/></svg>Westfield</span>
+          <span style="display:inline-flex;align-items:center;gap:8px;background:#fff;border:1px solid #E6E6E8;border-radius:8px;padding:12px 18px;font-family:'Inter',sans-serif;font-size:14px;font-weight:700;color:#111218;box-shadow:0 4px 12px rgba(17,18,24,0.05);"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#FC6620" stroke-width="2"><path d="M12 21c-4.5-3.5-8-7.2-8-11.2A8 8 0 0 1 12 2a8 8 0 0 1 8 7.8c0 4-3.5 7.7-8 11.2Z"/><circle cx="12" cy="10" r="2.5"/></svg>Oakridge</span>
+          <span style="display:inline-flex;align-items:center;gap:8px;background:#fff;border:1px solid #E6E6E8;border-radius:8px;padding:12px 18px;font-family:'Inter',sans-serif;font-size:14px;font-weight:700;color:#111218;box-shadow:0 4px 12px rgba(17,18,24,0.05);"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#FC6620" stroke-width="2"><path d="M12 21c-4.5-3.5-8-7.2-8-11.2A8 8 0 0 1 12 2a8 8 0 0 1 8 7.8c0 4-3.5 7.7-8 11.2Z"/><circle cx="12" cy="10" r="2.5"/></svg>Brookside</span>
+          <span style="display:inline-flex;align-items:center;gap:8px;background:#fff;border:1px solid #E6E6E8;border-radius:8px;padding:12px 18px;font-family:'Inter',sans-serif;font-size:14px;font-weight:700;color:#111218;box-shadow:0 4px 12px rgba(17,18,24,0.05);"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#FC6620" stroke-width="2"><path d="M12 21c-4.5-3.5-8-7.2-8-11.2A8 8 0 0 1 12 2a8 8 0 0 1 8 7.8c0 4-3.5 7.7-8 11.2Z"/><circle cx="12" cy="10" r="2.5"/></svg>Easton</span>
+          <span style="display:inline-flex;align-items:center;gap:8px;background:#fff;border:1px solid #E6E6E8;border-radius:8px;padding:12px 18px;font-family:'Inter',sans-serif;font-size:14px;font-weight:700;color:#111218;box-shadow:0 4px 12px rgba(17,18,24,0.05);"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#FC6620" stroke-width="2"><path d="M12 21c-4.5-3.5-8-7.2-8-11.2A8 8 0 0 1 12 2a8 8 0 0 1 8 7.8c0 4-3.5 7.7-8 11.2Z"/><circle cx="12" cy="10" r="2.5"/></svg>Hillcrest</span>
+          <span style="display:inline-flex;align-items:center;gap:8px;background:#fff;border:1px solid #E6E6E8;border-radius:8px;padding:12px 18px;font-family:'Inter',sans-serif;font-size:14px;font-weight:700;color:#111218;box-shadow:0 4px 12px rgba(17,18,24,0.05);"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#FC6620" stroke-width="2"><path d="M12 21c-4.5-3.5-8-7.2-8-11.2A8 8 0 0 1 12 2a8 8 0 0 1 8 7.8c0 4-3.5 7.7-8 11.2Z"/><circle cx="12" cy="10" r="2.5"/></svg>Meadow Park</span>
+          <span style="display:inline-flex;align-items:center;gap:8px;background:#fff;border:1px solid #E6E6E8;border-radius:8px;padding:12px 18px;font-family:'Inter',sans-serif;font-size:14px;font-weight:700;color:#111218;box-shadow:0 4px 12px rgba(17,18,24,0.05);"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#FC6620" stroke-width="2"><path d="M12 21c-4.5-3.5-8-7.2-8-11.2A8 8 0 0 1 12 2a8 8 0 0 1 8 7.8c0 4-3.5 7.7-8 11.2Z"/><circle cx="12" cy="10" r="2.5"/></svg>Lakeside</span>
+          <span style="display:inline-flex;align-items:center;gap:8px;background:#fff;border:1px solid #E6E6E8;border-radius:8px;padding:12px 18px;font-family:'Inter',sans-serif;font-size:14px;font-weight:700;color:#111218;box-shadow:0 4px 12px rgba(17,18,24,0.05);"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#FC6620" stroke-width="2"><path d="M12 21c-4.5-3.5-8-7.2-8-11.2A8 8 0 0 1 12 2a8 8 0 0 1 8 7.8c0 4-3.5 7.7-8 11.2Z"/><circle cx="12" cy="10" r="2.5"/></svg>Northgate</span>
+          <span style="display:inline-flex;align-items:center;gap:8px;background:#fff;border:1px solid #E6E6E8;border-radius:8px;padding:12px 18px;font-family:'Inter',sans-serif;font-size:14px;font-weight:700;color:#111218;box-shadow:0 4px 12px rgba(17,18,24,0.05);"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#FC6620" stroke-width="2"><path d="M12 21c-4.5-3.5-8-7.2-8-11.2A8 8 0 0 1 12 2a8 8 0 0 1 8 7.8c0 4-3.5 7.7-8 11.2Z"/><circle cx="12" cy="10" r="2.5"/></svg>Fairview</span>
+          <span style="display:inline-flex;align-items:center;gap:8px;background:#fff;border:1px solid #E6E6E8;border-radius:8px;padding:12px 18px;font-family:'Inter',sans-serif;font-size:14px;font-weight:700;color:#111218;box-shadow:0 4px 12px rgba(17,18,24,0.05);"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#FC6620" stroke-width="2"><path d="M12 21c-4.5-3.5-8-7.2-8-11.2A8 8 0 0 1 12 2a8 8 0 0 1 8 7.8c0 4-3.5 7.7-8 11.2Z"/><circle cx="12" cy="10" r="2.5"/></svg>Maple Grove</span>
+          <span style="display:inline-flex;align-items:center;gap:8px;background:#fff;border:1px solid #E6E6E8;border-radius:8px;padding:12px 18px;font-family:'Inter',sans-serif;font-size:14px;font-weight:700;color:#111218;box-shadow:0 4px 12px rgba(17,18,24,0.05);"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#FC6620" stroke-width="2"><path d="M12 21c-4.5-3.5-8-7.2-8-11.2A8 8 0 0 1 12 2a8 8 0 0 1 8 7.8c0 4-3.5 7.7-8 11.2Z"/><circle cx="12" cy="10" r="2.5"/></svg>Greendale</span>
+          <span style="display:inline-flex;align-items:center;gap:8px;background:#fff;border:1px solid #E6E6E8;border-radius:8px;padding:12px 18px;font-family:'Inter',sans-serif;font-size:14px;font-weight:700;color:#111218;box-shadow:0 4px 12px rgba(17,18,24,0.05);"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#FC6620" stroke-width="2"><path d="M12 21c-4.5-3.5-8-7.2-8-11.2A8 8 0 0 1 12 2a8 8 0 0 1 8 7.8c0 4-3.5 7.7-8 11.2Z"/><circle cx="12" cy="10" r="2.5"/></svg>Ashford</span>
+          <span style="display:inline-flex;align-items:center;gap:8px;background:#fff;border:1px solid #E6E6E8;border-radius:8px;padding:12px 18px;font-family:'Inter',sans-serif;font-size:14px;font-weight:700;color:#111218;box-shadow:0 4px 12px rgba(17,18,24,0.05);"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#FC6620" stroke-width="2"><path d="M12 21c-4.5-3.5-8-7.2-8-11.2A8 8 0 0 1 12 2a8 8 0 0 1 8 7.8c0 4-3.5 7.7-8 11.2Z"/><circle cx="12" cy="10" r="2.5"/></svg>Bridgewater</span>
+          <span style="display:inline-flex;align-items:center;gap:8px;background:#fff;border:1px solid #E6E6E8;border-radius:8px;padding:12px 18px;font-family:'Inter',sans-serif;font-size:14px;font-weight:700;color:#111218;box-shadow:0 4px 12px rgba(17,18,24,0.05);"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#FC6620" stroke-width="2"><path d="M12 21c-4.5-3.5-8-7.2-8-11.2A8 8 0 0 1 12 2a8 8 0 0 1 8 7.8c0 4-3.5 7.7-8 11.2Z"/><circle cx="12" cy="10" r="2.5"/></svg>Clearview</span>
+          <span style="display:inline-flex;align-items:center;gap:8px;background:#fff;border:1px solid #E6E6E8;border-radius:8px;padding:12px 18px;font-family:'Inter',sans-serif;font-size:14px;font-weight:700;color:#111218;box-shadow:0 4px 12px rgba(17,18,24,0.05);"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#FC6620" stroke-width="2"><path d="M12 21c-4.5-3.5-8-7.2-8-11.2A8 8 0 0 1 12 2a8 8 0 0 1 8 7.8c0 4-3.5 7.7-8 11.2Z"/><circle cx="12" cy="10" r="2.5"/></svg>Dunmore</span>
+          <span style="display:inline-flex;align-items:center;gap:8px;background:#fff;border:1px solid #E6E6E8;border-radius:8px;padding:12px 18px;font-family:'Inter',sans-serif;font-size:14px;font-weight:700;color:#111218;box-shadow:0 4px 12px rgba(17,18,24,0.05);"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#FC6620" stroke-width="2"><path d="M12 21c-4.5-3.5-8-7.2-8-11.2A8 8 0 0 1 12 2a8 8 0 0 1 8 7.8c0 4-3.5 7.7-8 11.2Z"/><circle cx="12" cy="10" r="2.5"/></svg>Elmwood</span>
+          <span style="display:inline-flex;align-items:center;gap:8px;background:#fff;border:1px solid #E6E6E8;border-radius:8px;padding:12px 18px;font-family:'Inter',sans-serif;font-size:14px;font-weight:700;color:#111218;box-shadow:0 4px 12px rgba(17,18,24,0.05);"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#FC6620" stroke-width="2"><path d="M12 21c-4.5-3.5-8-7.2-8-11.2A8 8 0 0 1 12 2a8 8 0 0 1 8 7.8c0 4-3.5 7.7-8 11.2Z"/><circle cx="12" cy="10" r="2.5"/></svg>Foxhollow</span>
+          <span style="display:inline-flex;align-items:center;gap:8px;background:#fff;border:1px solid #E6E6E8;border-radius:8px;padding:12px 18px;font-family:'Inter',sans-serif;font-size:14px;font-weight:700;color:#111218;box-shadow:0 4px 12px rgba(17,18,24,0.05);"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#FC6620" stroke-width="2"><path d="M12 21c-4.5-3.5-8-7.2-8-11.2A8 8 0 0 1 12 2a8 8 0 0 1 8 7.8c0 4-3.5 7.7-8 11.2Z"/><circle cx="12" cy="10" r="2.5"/></svg>Glenbrook</span>
+          <span style="display:inline-flex;align-items:center;gap:8px;background:#fff;border:1px solid #E6E6E8;border-radius:8px;padding:12px 18px;font-family:'Inter',sans-serif;font-size:14px;font-weight:700;color:#111218;box-shadow:0 4px 12px rgba(17,18,24,0.05);"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#FC6620" stroke-width="2"><path d="M12 21c-4.5-3.5-8-7.2-8-11.2A8 8 0 0 1 12 2a8 8 0 0 1 8 7.8c0 4-3.5 7.7-8 11.2Z"/><circle cx="12" cy="10" r="2.5"/></svg>Harborview</span>
+          <span style="display:inline-flex;align-items:center;gap:8px;background:#fff;border:1px solid #E6E6E8;border-radius:8px;padding:12px 18px;font-family:'Inter',sans-serif;font-size:14px;font-weight:700;color:#111218;box-shadow:0 4px 12px rgba(17,18,24,0.05);"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#FC6620" stroke-width="2"><path d="M12 21c-4.5-3.5-8-7.2-8-11.2A8 8 0 0 1 12 2a8 8 0 0 1 8 7.8c0 4-3.5 7.7-8 11.2Z"/><circle cx="12" cy="10" r="2.5"/></svg>Ivywood</span>
+          <span style="display:inline-flex;align-items:center;gap:8px;background:#fff;border:1px solid #E6E6E8;border-radius:8px;padding:12px 18px;font-family:'Inter',sans-serif;font-size:14px;font-weight:700;color:#111218;box-shadow:0 4px 12px rgba(17,18,24,0.05);"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#FC6620" stroke-width="2"><path d="M12 21c-4.5-3.5-8-7.2-8-11.2A8 8 0 0 1 12 2a8 8 0 0 1 8 7.8c0 4-3.5 7.7-8 11.2Z"/><circle cx="12" cy="10" r="2.5"/></svg>Kingsley</span>
           <span style="display:inline-flex;align-items:center;gap:5px;padding:12px 6px;font-family:'Inter',sans-serif;font-size:13px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:#9E9EA5;">+ More Areas</span>
         </div>
       </div>
@@ -533,7 +563,7 @@
   <section id="contact" style="background:#111218;padding:clamp(48px,8vw,96px) 24px;">
     <div style="max-width:1280px;margin:0 auto;display:flex;flex-wrap:wrap;gap:56px;">
       <div style="flex:1 1 380px;min-width:280px;position:relative;">
-        <div style="position:absolute;top:-20px;right:-20px;width:200px;height:200px;background-image:radial-gradient(rgba(252,102,32,0.35) 2px, transparent 2px);background-size:18px 18px;opacity:0.7;z-index:0;"></div>
+        <div style="position:absolute;top:-20px;right:-140px;width:220px;height:220px;background-image:radial-gradient(rgba(252,102,32,0.35) 2px, transparent 2px);background-size:18px 18px;opacity:0.7;z-index:0;"></div>
         <div style="position:relative;z-index:1;">
           <div style="display:flex;align-items:center;gap:10px;margin-bottom:16px;">
             <span style="width:22px;height:2px;background:#FC6620;"></span>
@@ -559,7 +589,7 @@
         </div>
       </div>
 
-      <div style="flex:1.2 1 480px;min-width:300px;">
+      <div style="flex:1.2 1 480px;min-width:300px;position:relative;z-index:2;">
         <div style="background:#fff;border-radius:12px;padding:clamp(28px,4vw,44px);">
           <form onSubmit="{{ onFormSubmit }}" style="display:flex;flex-direction:column;gap:20px;">
             <div style="display:flex;gap:20px;flex-wrap:wrap;">
@@ -572,9 +602,15 @@
                 <input id="bds-phone" type="tel" placeholder="(555) 010-2938" style="width:100%;height:52px;background:#fff;border:1px solid #E2E2E5;border-radius:6px;color:#111218;padding:0 16px;font-size:14px;" />
               </div>
             </div>
-            <div>
-              <label for="bds-email" style="display:block;font-family:'Inter',sans-serif;font-size:13px;font-weight:700;color:#111218;margin-bottom:8px;">Email Address</label>
-              <input id="bds-email" type="email" required placeholder="jane@example.com" style="width:100%;height:52px;background:#fff;border:1px solid #E2E2E5;border-radius:6px;color:#111218;padding:0 16px;font-size:14px;" />
+            <div style="display:flex;gap:20px;flex-wrap:wrap;">
+              <div style="flex:1 1 200px;">
+                <label for="bds-email" style="display:block;font-family:'Inter',sans-serif;font-size:13px;font-weight:700;color:#111218;margin-bottom:8px;">Email Address</label>
+                <input id="bds-email" type="email" required placeholder="jane@example.com" style="width:100%;height:52px;background:#fff;border:1px solid #E2E2E5;border-radius:6px;color:#111218;padding:0 16px;font-size:14px;" />
+              </div>
+              <div style="flex:1 1 200px;">
+                <label for="bds-date" style="display:block;font-family:'Inter',sans-serif;font-size:13px;font-weight:700;color:#111218;margin-bottom:8px;">Preferred Date</label>
+                <input id="bds-date" type="date" style="width:100%;height:52px;background:#fff;border:1px solid #E2E2E5;border-radius:6px;color:#111218;padding:0 16px;font-size:14px;" />
+              </div>
             </div>
             <div style="display:flex;gap:20px;flex-wrap:wrap;">
               <div style="flex:1 1 200px;">
@@ -599,14 +635,6 @@
                 </select>
               </div>
             </div>
-            <div>
-              <label for="bds-date" style="display:block;font-family:'Inter',sans-serif;font-size:13px;font-weight:700;color:#111218;margin-bottom:8px;">Preferred Date</label>
-              <input id="bds-date" type="date" style="width:100%;height:52px;background:#fff;border:1px solid #E2E2E5;border-radius:6px;color:#111218;padding:0 16px;font-size:14px;" />
-            </div>
-            <div>
-              <label for="bds-message" style="display:block;font-family:'Inter',sans-serif;font-size:13px;font-weight:700;color:#111218;margin-bottom:8px;">Message</label>
-              <textarea id="bds-message" rows="4" placeholder="Lorem ipsum dolor sit amet, consectetur adipiscing elit." style="width:100%;background:#fff;border:1px solid #E2E2E5;border-radius:6px;color:#111218;padding:14px 16px;font-size:14px;resize:vertical;"></textarea>
-            </div>
             <button type="submit" style="width:100%;background:#FC6620;color:#fff;font-weight:700;font-size:15px;height:58px;border:none;border-radius:6px;">Book a Lesson</button>
           </form>
         </div>
@@ -615,10 +643,10 @@
   </section>
 
   <section style="position:relative;background:#F7F7F7;padding:clamp(48px,8vw,88px) 24px 0;">
-    <div style="position:absolute;top:0;left:38%;width:160px;height:100%;background:#FC6620;opacity:0.9;clip-path:polygon(40% 0,60% 0,20% 100%,0 100%);"></div>
     <div style="max-width:1280px;margin:0 auto;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:32px;position:relative;">
       <div style="flex:1 1 340px;min-width:260px;display:flex;justify-content:center;align-self:flex-end;position:relative;z-index:2;">
-        <img src="uploads/bennetts-images/36_cta_footer_car_student.png" alt="Student celebrating a pass in front of a Bennetts branded car" loading="lazy" style="display:block;width:100%;max-width:600px;height:auto;object-fit:contain;border-radius:6px;box-shadow:0 20px 40px rgba(17,18,24,0.28);" />
+        <div style="position:absolute;top:9%;left:0;width:66%;height:84%;background:#FC6620;clip-path:polygon(0 0,70% 0,100% 100%,0 100%);z-index:-1;"></div>
+        <img src="uploads/bennetts-images/36_cta_footer_car_student.png" alt="Student celebrating a pass in front of a Bennetts branded car" loading="lazy" style="display:block;width:100%;max-width:600px;height:auto;object-fit:contain;" />
       </div>
       <div style="flex:1 1 340px;min-width:280px;text-align:right;padding-bottom:clamp(48px,8vw,88px);">
         <h2 style="font-family:'Inter',sans-serif;font-weight:800;font-size:clamp(26px,3.6vw,38px);line-height:1.25;margin:0 0 16px;color:#111218;">Book Your First Driving Lesson Today</h2>
