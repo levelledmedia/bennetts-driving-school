@@ -27,20 +27,34 @@
   .bds-service-card .bds-learn-more { transition: background 0.25s ease, border-color 0.25s ease, color 0.25s ease; }
   .bds-service-card:hover .bds-learn-more { background: #111218 !important; border-color: #111218 !important; color: #fff !important; }
   @keyframes bdsFadeUp { from { opacity: 0; transform: translateY(16px); } to { opacity: 1; transform: translateY(0); } }
+
+  @media (max-width: 700px) {
+    .bds-topbar { height: auto !important; flex-wrap: wrap; justify-content: center !important; padding: 8px 0; gap: 6px 16px; text-align: center; }
+    .bds-topbar-email { display: none; }
+    .bds-why-grid { grid-template-columns: repeat(2, minmax(0,1fr)) !important; }
+    .bds-about-stack { height: 420px !important; }
+    .bds-contact-dots { right: -20px !important; width: 160px !important; height: 160px !important; }
+    .bds-footer-cta-text { text-align: center !important; }
+    .bds-footer-cta-text p { margin-left: auto !important; margin-right: auto !important; }
+    .bds-footer-orange-shape { width: 120px !important; }
+  }
+  @media (max-width: 480px) {
+    .bds-why-grid { grid-template-columns: 1fr !important; }
+  }
 </style>
 </helmet>
 
 <div style="background:#FFFFFF;color:#17171A;position:relative;">
 
   <div style="background:#FC6620;color:#111218;">
-    <div style="width:min(1280px,calc(100% - 48px));margin:0 auto;height:36px;display:flex;align-items:center;justify-content:space-between;gap:16px;font-size:13px;font-weight:600;">
+    <div class="bds-topbar" style="width:100%;padding:0 24px;margin:0 auto;height:36px;display:flex;align-items:center;justify-content:space-between;gap:16px;font-size:13px;font-weight:600;">
       <div style="display:flex;align-items:center;gap:20px;overflow:hidden;">
         <span style="white-space:nowrap;">Mon &ndash; Sat: 8:00am &ndash; 6:00pm</span>
       </div>
       <div style="display:flex;align-items:center;gap:20px;">
         <a href="tel:5550102938" style="color:#111218;white-space:nowrap;">(555) 010-2938</a>
-        <span style="opacity:0.5;">|</span>
-        <a href="mailto:hello@bennettsdrivingschool.com" style="color:#111218;white-space:nowrap;">hello@bennettsdrivingschool.com</a>
+        <span class="bds-topbar-email" style="opacity:0.5;">|</span>
+        <a href="mailto:hello@bennettsdrivingschool.com" class="bds-topbar-email" style="color:#111218;white-space:nowrap;">hello@bennettsdrivingschool.com</a>
       </div>
     </div>
   </div>
@@ -120,7 +134,7 @@
 
   <section style="background:#FFFFFF;padding:0 24px;">
     <div style="max-width:1280px;margin:0 auto;padding:34px 0 30px;border-bottom:1px solid #E6E6E8;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:24px 32px;">
-      <span style="font-family:'Inter',sans-serif;font-size:12px;font-weight:700;letter-spacing:1.2px;text-transform:uppercase;color:#9E9EA5;">Trusted By Learners Across The UK</span>
+      <span style="font-family:'Inter',sans-serif;font-size:13px;font-weight:700;letter-spacing:1.2px;text-transform:uppercase;color:#9E9EA5;">Trusted By Learners Across The UK</span>
       <div style="display:flex;flex-wrap:wrap;align-items:center;gap:24px 20px;">
         <a href="https://www.google.com/search?q=Bennetts+Driving+School+reviews" target="_blank" rel="noopener noreferrer" style="display:block;">
           <svg width="190" height="33" viewBox="0 0 160 24" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Google customer rating: 4.5 out of 5 stars" style="display:block;">
@@ -152,7 +166,7 @@
 
   <section style="background:#FFFFFF;padding:clamp(32px,5vw,56px) 24px clamp(48px,7vw,80px);">
     <div style="max-width:1280px;margin:0 auto;position:relative;z-index:5;">
-      <div style="display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:28px;">
+      <div class="bds-why-grid" style="display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:28px;">
 
         <div class="bds-why-card" style="background:#fff;padding:40px 30px 34px;border:1px solid #E6E6E8;border-radius:3px;box-shadow:0 2px 6px rgba(17,18,24,0.03);position:relative;">
           <svg width="35" height="35" viewBox="0 0 24 24" fill="none" stroke="#FC6620" stroke-width="1.9" style="display:block;margin:0 0 22px;position:relative;z-index:1;"><path d="M12 3 4 6v6c0 5 3.4 8.5 8 10 4.6-1.5 8-5 8-10V6l-8-3Z"/><polyline points="8.5 12 11 14.5 15.5 9.5"/></svg>
@@ -187,7 +201,7 @@
       <div style="flex:1 1 340px;min-width:260px;display:flex;justify-content:center;align-self:flex-end;position:relative;margin-bottom:calc(-1 * clamp(48px,8vw,96px));">
         <div style="position:absolute;left:6%;top:6%;width:170px;height:170px;background-image:radial-gradient(rgba(252,102,32,0.35) 2px, transparent 2px);background-size:18px 18px;opacity:0.8;z-index:0;"></div>
         <div style="position:absolute;right:-3%;top:34%;width:150px;height:150px;background-image:radial-gradient(rgba(17,18,24,0.3) 2px, transparent 2px);background-size:18px 18px;opacity:0.75;z-index:0;"></div>
-        <img src="/Users/lewisparrott/Downloads/cb1f23df-a1cd-4f25-a5a6-c3c45b623637 (1).png" alt="Student holding a passed driving test sign" loading="lazy" style="position:relative;z-index:1;width:100%;max-width:460px;height:auto;object-fit:contain;" />
+        <img src="uploads/bennetts-images/38_pass_confidence_student.png" alt="Student holding a passed driving test sign" loading="lazy" style="position:relative;z-index:1;width:100%;max-width:460px;height:auto;object-fit:contain;" />
       </div>
       <div style="flex:1 1 420px;min-width:300px;">
         <span style="font-family:'Inter',sans-serif;font-weight:700;font-size:13px;letter-spacing:1px;color:#C8460D;text-transform:uppercase;">Pass With Confidence</span>
@@ -388,7 +402,7 @@
 
   <section id="about" style="background:#FFFFFF;padding:clamp(48px,8vw,96px) 24px;">
     <div style="max-width:1280px;margin:0 auto;display:flex;flex-wrap:wrap;align-items:center;gap:56px;">
-      <div style="flex:1 1 380px;min-width:300px;position:relative;height:560px;">
+      <div class="bds-about-stack" style="flex:1 1 380px;min-width:300px;position:relative;height:560px;">
         <img src="uploads/bennetts-images/30_about_overlap_sign.jpg" alt="Student holding a Bennetts pass sign beside the car" loading="lazy" style="position:absolute;top:0;left:0;width:56%;height:56%;object-fit:cover;border-radius:4px;box-shadow:0 16px 32px rgba(17,18,24,0.16);z-index:1;" />
         <img src="uploads/bennetts-images/31_about_overlap_certificate_male.jpeg" alt="Student celebrating with his pass certificate" loading="lazy" style="position:absolute;top:24%;right:0;width:50%;height:48%;object-fit:cover;border-radius:4px;box-shadow:-6px 10px 22px rgba(17,18,24,0.32),0 18px 36px rgba(17,18,24,0.2);z-index:2;" />
         <img src="uploads/bennetts-images/32_about_overlap_certificate_female.jpg" alt="Student holding her pass certificate by the car" loading="lazy" style="position:absolute;bottom:0;left:14%;width:46%;height:42%;object-fit:cover;border-radius:4px;box-shadow:0 -8px 22px rgba(17,18,24,0.32),0 20px 40px rgba(17,18,24,0.24);z-index:3;" />
@@ -421,72 +435,33 @@
     </div>
   </section>
 
-  <section id="coverage" style="background:#F7F7F7;padding:clamp(48px,8vw,96px) 24px;">
-    <div style="max-width:1280px;margin:0 auto;">
-      <div style="text-align:center;max-width:700px;margin:0 auto 44px;">
-        <div style="margin-bottom:14px;">
-          <span style="font-family:'Inter',sans-serif;font-weight:700;font-size:13px;letter-spacing:1px;color:#C8460D;text-transform:uppercase;">Coverage</span>
-        </div>
-        <h2 style="font-family:'Inter',sans-serif;font-weight:800;font-size:clamp(28px,4vw,40px);line-height:1.2;margin:0 0 16px;color:#111218;">Areas We Cover</h2>
-        <p style="font-size:16px;line-height:1.7;color:#66666C;margin:0;">Local instructors covering the routes and neighbourhoods your lessons are most likely to start, finish, and test through.</p>
-      </div>
-
-      <div style="display:flex;flex-wrap:wrap;gap:14px;justify-content:center;max-width:900px;margin:0 auto;">
-        <span style="display:inline-flex;align-items:center;gap:8px;background:#fff;border:1px solid #E6E6E8;border-radius:8px;padding:13px 20px;font-family:'Inter',sans-serif;font-size:15px;font-weight:700;color:#111218;"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#FC6620" stroke-width="2"><path d="M12 21c-4.5-3.5-8-7.2-8-11.2A8 8 0 0 1 12 2a8 8 0 0 1 8 7.8c0 4-3.5 7.7-8 11.2Z"/><circle cx="12" cy="10" r="2.5"/></svg>Springfield</span>
-        <span style="display:inline-flex;align-items:center;gap:8px;background:#fff;border:1px solid #E6E6E8;border-radius:8px;padding:13px 20px;font-family:'Inter',sans-serif;font-size:15px;font-weight:700;color:#111218;"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#FC6620" stroke-width="2"><path d="M12 21c-4.5-3.5-8-7.2-8-11.2A8 8 0 0 1 12 2a8 8 0 0 1 8 7.8c0 4-3.5 7.7-8 11.2Z"/><circle cx="12" cy="10" r="2.5"/></svg>Riverside</span>
-        <span style="display:inline-flex;align-items:center;gap:8px;background:#fff;border:1px solid #E6E6E8;border-radius:8px;padding:13px 20px;font-family:'Inter',sans-serif;font-size:15px;font-weight:700;color:#111218;"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#FC6620" stroke-width="2"><path d="M12 21c-4.5-3.5-8-7.2-8-11.2A8 8 0 0 1 12 2a8 8 0 0 1 8 7.8c0 4-3.5 7.7-8 11.2Z"/><circle cx="12" cy="10" r="2.5"/></svg>Westfield</span>
-        <span style="display:inline-flex;align-items:center;gap:8px;background:#fff;border:1px solid #E6E6E8;border-radius:8px;padding:13px 20px;font-family:'Inter',sans-serif;font-size:15px;font-weight:700;color:#111218;"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#FC6620" stroke-width="2"><path d="M12 21c-4.5-3.5-8-7.2-8-11.2A8 8 0 0 1 12 2a8 8 0 0 1 8 7.8c0 4-3.5 7.7-8 11.2Z"/><circle cx="12" cy="10" r="2.5"/></svg>Oakridge</span>
-        <span style="display:inline-flex;align-items:center;gap:8px;background:#fff;border:1px solid #E6E6E8;border-radius:8px;padding:13px 20px;font-family:'Inter',sans-serif;font-size:15px;font-weight:700;color:#111218;"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#FC6620" stroke-width="2"><path d="M12 21c-4.5-3.5-8-7.2-8-11.2A8 8 0 0 1 12 2a8 8 0 0 1 8 7.8c0 4-3.5 7.7-8 11.2Z"/><circle cx="12" cy="10" r="2.5"/></svg>Brookside</span>
-        <span style="display:inline-flex;align-items:center;gap:8px;background:#fff;border:1px solid #E6E6E8;border-radius:8px;padding:13px 20px;font-family:'Inter',sans-serif;font-size:15px;font-weight:700;color:#111218;"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#FC6620" stroke-width="2"><path d="M12 21c-4.5-3.5-8-7.2-8-11.2A8 8 0 0 1 12 2a8 8 0 0 1 8 7.8c0 4-3.5 7.7-8 11.2Z"/><circle cx="12" cy="10" r="2.5"/></svg>Easton</span>
-        <span style="display:inline-flex;align-items:center;gap:8px;background:#fff;border:1px solid #E6E6E8;border-radius:8px;padding:13px 20px;font-family:'Inter',sans-serif;font-size:15px;font-weight:700;color:#111218;"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#FC6620" stroke-width="2"><path d="M12 21c-4.5-3.5-8-7.2-8-11.2A8 8 0 0 1 12 2a8 8 0 0 1 8 7.8c0 4-3.5 7.7-8 11.2Z"/><circle cx="12" cy="10" r="2.5"/></svg>Hillcrest</span>
-        <span style="display:inline-flex;align-items:center;gap:8px;background:#fff;border:1px solid #E6E6E8;border-radius:8px;padding:13px 20px;font-family:'Inter',sans-serif;font-size:15px;font-weight:700;color:#111218;"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#FC6620" stroke-width="2"><path d="M12 21c-4.5-3.5-8-7.2-8-11.2A8 8 0 0 1 12 2a8 8 0 0 1 8 7.8c0 4-3.5 7.7-8 11.2Z"/><circle cx="12" cy="10" r="2.5"/></svg>Meadow Park</span>
-        <span style="display:inline-flex;align-items:center;gap:8px;background:#fff;border:1px solid #E6E6E8;border-radius:8px;padding:13px 20px;font-family:'Inter',sans-serif;font-size:15px;font-weight:700;color:#111218;"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#FC6620" stroke-width="2"><path d="M12 21c-4.5-3.5-8-7.2-8-11.2A8 8 0 0 1 12 2a8 8 0 0 1 8 7.8c0 4-3.5 7.7-8 11.2Z"/><circle cx="12" cy="10" r="2.5"/></svg>Lakeside</span>
-        <span style="display:inline-flex;align-items:center;gap:8px;background:#fff;border:1px solid #E6E6E8;border-radius:8px;padding:13px 20px;font-family:'Inter',sans-serif;font-size:15px;font-weight:700;color:#111218;"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#FC6620" stroke-width="2"><path d="M12 21c-4.5-3.5-8-7.2-8-11.2A8 8 0 0 1 12 2a8 8 0 0 1 8 7.8c0 4-3.5 7.7-8 11.2Z"/><circle cx="12" cy="10" r="2.5"/></svg>Northgate</span>
-        <span style="display:inline-flex;align-items:center;gap:8px;background:#fff;border:1px solid #E6E6E8;border-radius:8px;padding:13px 20px;font-family:'Inter',sans-serif;font-size:15px;font-weight:700;color:#111218;"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#FC6620" stroke-width="2"><path d="M12 21c-4.5-3.5-8-7.2-8-11.2A8 8 0 0 1 12 2a8 8 0 0 1 8 7.8c0 4-3.5 7.7-8 11.2Z"/><circle cx="12" cy="10" r="2.5"/></svg>Fairview</span>
-        <span style="display:inline-flex;align-items:center;gap:8px;background:#fff;border:1px solid #E6E6E8;border-radius:8px;padding:13px 20px;font-family:'Inter',sans-serif;font-size:15px;font-weight:700;color:#111218;"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#FC6620" stroke-width="2"><path d="M12 21c-4.5-3.5-8-7.2-8-11.2A8 8 0 0 1 12 2a8 8 0 0 1 8 7.8c0 4-3.5 7.7-8 11.2Z"/><circle cx="12" cy="10" r="2.5"/></svg>Maple Grove</span>
-        <span style="display:inline-flex;align-items:center;gap:8px;background:#fff;border:1px solid #E6E6E8;border-radius:8px;padding:13px 20px;font-family:'Inter',sans-serif;font-size:15px;font-weight:700;color:#111218;"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#FC6620" stroke-width="2"><path d="M12 21c-4.5-3.5-8-7.2-8-11.2A8 8 0 0 1 12 2a8 8 0 0 1 8 7.8c0 4-3.5 7.7-8 11.2Z"/><circle cx="12" cy="10" r="2.5"/></svg>Greendale</span>
-        <span style="display:inline-flex;align-items:center;gap:8px;background:#fff;border:1px solid #E6E6E8;border-radius:8px;padding:13px 20px;font-family:'Inter',sans-serif;font-size:15px;font-weight:700;color:#111218;"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#FC6620" stroke-width="2"><path d="M12 21c-4.5-3.5-8-7.2-8-11.2A8 8 0 0 1 12 2a8 8 0 0 1 8 7.8c0 4-3.5 7.7-8 11.2Z"/><circle cx="12" cy="10" r="2.5"/></svg>Ashford</span>
-        <span style="display:inline-flex;align-items:center;gap:8px;background:#fff;border:1px solid #E6E6E8;border-radius:8px;padding:13px 20px;font-family:'Inter',sans-serif;font-size:15px;font-weight:700;color:#111218;"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#FC6620" stroke-width="2"><path d="M12 21c-4.5-3.5-8-7.2-8-11.2A8 8 0 0 1 12 2a8 8 0 0 1 8 7.8c0 4-3.5 7.7-8 11.2Z"/><circle cx="12" cy="10" r="2.5"/></svg>Bridgewater</span>
-        <span style="display:inline-flex;align-items:center;gap:8px;background:#fff;border:1px solid #E6E6E8;border-radius:8px;padding:13px 20px;font-family:'Inter',sans-serif;font-size:15px;font-weight:700;color:#111218;"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#FC6620" stroke-width="2"><path d="M12 21c-4.5-3.5-8-7.2-8-11.2A8 8 0 0 1 12 2a8 8 0 0 1 8 7.8c0 4-3.5 7.7-8 11.2Z"/><circle cx="12" cy="10" r="2.5"/></svg>Clearview</span>
-        <span style="display:inline-flex;align-items:center;gap:8px;background:#fff;border:1px solid #E6E6E8;border-radius:8px;padding:13px 20px;font-family:'Inter',sans-serif;font-size:15px;font-weight:700;color:#111218;"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#FC6620" stroke-width="2"><path d="M12 21c-4.5-3.5-8-7.2-8-11.2A8 8 0 0 1 12 2a8 8 0 0 1 8 7.8c0 4-3.5 7.7-8 11.2Z"/><circle cx="12" cy="10" r="2.5"/></svg>Dunmore</span>
-        <span style="display:inline-flex;align-items:center;gap:8px;background:#fff;border:1px solid #E6E6E8;border-radius:8px;padding:13px 20px;font-family:'Inter',sans-serif;font-size:15px;font-weight:700;color:#111218;"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#FC6620" stroke-width="2"><path d="M12 21c-4.5-3.5-8-7.2-8-11.2A8 8 0 0 1 12 2a8 8 0 0 1 8 7.8c0 4-3.5 7.7-8 11.2Z"/><circle cx="12" cy="10" r="2.5"/></svg>Elmwood</span>
-        <span style="display:inline-flex;align-items:center;gap:8px;background:#fff;border:1px solid #E6E6E8;border-radius:8px;padding:13px 20px;font-family:'Inter',sans-serif;font-size:15px;font-weight:700;color:#111218;"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#FC6620" stroke-width="2"><path d="M12 21c-4.5-3.5-8-7.2-8-11.2A8 8 0 0 1 12 2a8 8 0 0 1 8 7.8c0 4-3.5 7.7-8 11.2Z"/><circle cx="12" cy="10" r="2.5"/></svg>Foxhollow</span>
-        <span style="display:inline-flex;align-items:center;gap:8px;background:#fff;border:1px solid #E6E6E8;border-radius:8px;padding:13px 20px;font-family:'Inter',sans-serif;font-size:15px;font-weight:700;color:#111218;"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#FC6620" stroke-width="2"><path d="M12 21c-4.5-3.5-8-7.2-8-11.2A8 8 0 0 1 12 2a8 8 0 0 1 8 7.8c0 4-3.5 7.7-8 11.2Z"/><circle cx="12" cy="10" r="2.5"/></svg>Glenbrook</span>
-        <span style="display:inline-flex;align-items:center;gap:8px;background:#fff;border:1px solid #E6E6E8;border-radius:8px;padding:13px 20px;font-family:'Inter',sans-serif;font-size:15px;font-weight:700;color:#111218;"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#FC6620" stroke-width="2"><path d="M12 21c-4.5-3.5-8-7.2-8-11.2A8 8 0 0 1 12 2a8 8 0 0 1 8 7.8c0 4-3.5 7.7-8 11.2Z"/><circle cx="12" cy="10" r="2.5"/></svg>Harborview</span>
-        <span style="display:inline-flex;align-items:center;gap:8px;background:#fff;border:1px solid #E6E6E8;border-radius:8px;padding:13px 20px;font-family:'Inter',sans-serif;font-size:15px;font-weight:700;color:#111218;"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#FC6620" stroke-width="2"><path d="M12 21c-4.5-3.5-8-7.2-8-11.2A8 8 0 0 1 12 2a8 8 0 0 1 8 7.8c0 4-3.5 7.7-8 11.2Z"/><circle cx="12" cy="10" r="2.5"/></svg>Ivywood</span>
-        <span style="display:inline-flex;align-items:center;gap:8px;background:#fff;border:1px solid #E6E6E8;border-radius:8px;padding:13px 20px;font-family:'Inter',sans-serif;font-size:15px;font-weight:700;color:#111218;"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#FC6620" stroke-width="2"><path d="M12 21c-4.5-3.5-8-7.2-8-11.2A8 8 0 0 1 12 2a8 8 0 0 1 8 7.8c0 4-3.5 7.7-8 11.2Z"/><circle cx="12" cy="10" r="2.5"/></svg>Kingsley</span>
-        <span style="display:inline-flex;align-items:center;gap:5px;padding:13px 6px;font-family:'Inter',sans-serif;font-size:13px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:#9E9EA5;">+ More</span>
-      </div>
-    </div>
-  </section>
-
-  <section id="coverage-v2" style="position:relative;background:#FFFFFF;padding:clamp(48px,8vw,96px) 24px;overflow:hidden;">
-    <div style="max-width:1280px;margin:0 auto;display:flex;flex-wrap:wrap;align-items:center;gap:56px;position:relative;">
-      <div style="flex:1 1 380px;min-width:300px;">
+  <section id="coverage" style="position:relative;background:#F7F7F7;padding:clamp(48px,8vw,96px) 24px;overflow:hidden;">
+    <div style="max-width:1280px;margin:0 auto;display:flex;flex-wrap:wrap;align-items:center;gap:40px;position:relative;">
+      <div style="flex:1 1 460px;min-width:300px;">
         <div style="margin-bottom:14px;">
           <span style="font-family:'Inter',sans-serif;font-weight:700;font-size:13px;letter-spacing:1px;color:#C8460D;text-transform:uppercase;">Coverage</span>
         </div>
         <h2 style="font-family:'Inter',sans-serif;font-weight:800;font-size:clamp(28px,4vw,40px);line-height:1.2;margin:0 0 18px;color:#111218;">Areas We Cover</h2>
-        <p style="font-size:16px;line-height:1.7;color:#66666C;margin:0 0 28px;max-width:460px;">Local instructors covering the routes and neighbourhoods your lessons are most likely to start, finish, and test through. Wherever you're based across the area, we'll match you with an instructor who already knows your local roads and test routes inside out.</p>
+        <p style="font-size:16px;line-height:1.7;color:#66666C;margin:0 0 28px;max-width:580px;">Local instructors covering the routes and neighbourhoods your lessons are most likely to start, finish, and test through. Wherever you're based across the area, we'll match you with an instructor who already knows your local roads and test routes inside out.</p>
 
         <div style="display:flex;flex-wrap:wrap;gap:32px;margin-bottom:32px;">
           <div>
-            <div style="font-family:'Inter',sans-serif;font-weight:800;font-size:30px;color:#111218;">22+</div>
+            <div style="font-family:'Inter',sans-serif;font-weight:800;font-size:30px;color:#FC6620;">22+</div>
             <div style="font-size:13px;color:#66666C;margin-top:2px;">Areas Covered</div>
           </div>
           <div>
-            <div style="font-family:'Inter',sans-serif;font-weight:800;font-size:30px;color:#111218;">15</div>
+            <div style="font-family:'Inter',sans-serif;font-weight:800;font-size:30px;color:#FC6620;">15</div>
             <div style="font-size:13px;color:#66666C;margin-top:2px;">Local Instructors</div>
           </div>
           <div>
-            <div style="font-family:'Inter',sans-serif;font-weight:800;font-size:30px;color:#111218;">10mi</div>
+            <div style="font-family:'Inter',sans-serif;font-weight:800;font-size:30px;color:#FC6620;">10mi</div>
             <div style="font-size:13px;color:#66666C;margin-top:2px;">Avg. Pickup Radius</div>
           </div>
         </div>
 
         <a href="#contact" style="display:inline-flex;align-items:center;justify-content:center;background:#111218;color:#fff;font-weight:700;font-size:15px;height:58px;padding:0 38px;border-radius:3px;">Check Your Area</a>
       </div>
-      <div style="flex:1.1 1 420px;min-width:300px;position:relative;">
+      <div style="flex:1 1 380px;min-width:300px;position:relative;">
         <img src="uploads/bennetts-images/37_uk_silhouette.svg" alt="" aria-hidden="true" loading="lazy" style="position:absolute;top:50%;left:50%;width:150%;max-width:none;height:auto;transform:translate(-50%,-50%);opacity:0.5;z-index:0;pointer-events:none;" />
         <div style="position:relative;z-index:1;display:flex;flex-wrap:wrap;gap:12px;">
           <span style="display:inline-flex;align-items:center;gap:8px;background:#fff;border:1px solid #E6E6E8;border-radius:8px;padding:12px 18px;font-family:'Inter',sans-serif;font-size:14px;font-weight:700;color:#111218;box-shadow:0 4px 12px rgba(17,18,24,0.05);"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#FC6620" stroke-width="2"><path d="M12 21c-4.5-3.5-8-7.2-8-11.2A8 8 0 0 1 12 2a8 8 0 0 1 8 7.8c0 4-3.5 7.7-8 11.2Z"/><circle cx="12" cy="10" r="2.5"/></svg>Springfield</span>
@@ -520,25 +495,11 @@
 
   <section id="blog">
 
-    <div style="background:#F7F7F7;padding:clamp(48px,8vw,96px) 24px;">
-      <div style="text-align:center;max-width:640px;margin:0 auto 40px;">
-        <span style="font-family:'Inter',sans-serif;font-weight:700;font-size:13px;letter-spacing:1px;color:#C8460D;text-transform:uppercase;">FAQ</span>
-        <h2 style="font-family:'Inter',sans-serif;font-weight:800;font-size:clamp(28px,4vw,40px);line-height:1.2;margin:14px 0 0;color:#111218;">Frequently Asked Questions</h2>
-      </div>
-      <div style="max-width:820px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(340px,1fr));gap:24px;">
-        <div style="background:#fff;padding:24px 26px;border:1px solid #E6E6E8;border-radius:3px;"><div style="width:64px;height:4px;background:#FC6620;margin:0 0 16px;"></div><h3 style="font-family:'Inter',sans-serif;font-size:16px;font-weight:700;margin:0 0 8px;color:#111218;">Do I need a permit before my first lesson?</h3><p style="font-size:14px;color:#66666C;margin:0;line-height:1.7;">Yes, bring a valid learner's permit to every lesson.</p></div>
-        <div style="background:#fff;padding:24px 26px;border:1px solid #E6E6E8;border-radius:3px;"><div style="width:64px;height:4px;background:#FC6620;margin:0 0 16px;"></div><h3 style="font-family:'Inter',sans-serif;font-size:16px;font-weight:700;margin:0 0 8px;color:#111218;">What age can I start lessons?</h3><p style="font-size:14px;color:#66666C;margin:0;line-height:1.7;">15&frac12; with a permit, no upper age limit.</p></div>
-        <div style="background:#fff;padding:24px 26px;border:1px solid #E6E6E8;border-radius:3px;"><div style="width:64px;height:4px;background:#FC6620;margin:0 0 16px;"></div><h3 style="font-family:'Inter',sans-serif;font-size:16px;font-weight:700;margin:0 0 8px;color:#111218;">Do you provide the car for lessons?</h3><p style="font-size:14px;color:#66666C;margin:0;line-height:1.7;">Yes, dual-control cars are included at no extra cost.</p></div>
-        <div style="background:#fff;padding:24px 26px;border:1px solid #E6E6E8;border-radius:3px;"><div style="width:64px;height:4px;background:#FC6620;margin:0 0 16px;"></div><h3 style="font-family:'Inter',sans-serif;font-size:16px;font-weight:700;margin:0 0 8px;color:#111218;">How many lessons will I need?</h3><p style="font-size:14px;color:#66666C;margin:0;line-height:1.7;">Most students are test-ready in 20&ndash;30 hours.</p></div>
-        <div style="background:#fff;padding:24px 26px;border:1px solid #E6E6E8;border-radius:3px;grid-column:1/-1;"><div style="width:64px;height:4px;background:#FC6620;margin:0 0 16px;"></div><h3 style="font-family:'Inter',sans-serif;font-size:16px;font-weight:700;margin:0 0 8px;color:#111218;">Can I book just one trial lesson first?</h3><p style="font-size:14px;color:#66666C;margin:0;line-height:1.7;">Yes, single lessons are available with no package required.</p></div>
-      </div>
-    </div>
-
     <div style="background:#FFFFFF;padding:clamp(48px,8vw,96px) 24px;">
       <div style="max-width:820px;margin:0 auto;">
         <div style="text-align:center;max-width:640px;margin:0 auto 40px;">
           <span style="font-family:'Inter',sans-serif;font-weight:700;font-size:13px;letter-spacing:1px;color:#C8460D;text-transform:uppercase;">FAQ</span>
-          <h2 style="font-family:'Inter',sans-serif;font-weight:800;font-size:clamp(28px,4vw,40px);line-height:1.2;margin:14px 0 0;color:#111218;">Still Have Questions?</h2>
+          <h2 style="font-family:'Inter',sans-serif;font-weight:800;font-size:clamp(28px,4vw,40px);line-height:1.2;margin:14px 0 0;color:#111218;">Frequently Asked Questions</h2>
         </div>
         <div style="display:flex;flex-direction:column;gap:12px;">
           <sc-for list="{{ faqItems }}" as="f">
@@ -563,7 +524,7 @@
   <section id="contact" style="background:#111218;padding:clamp(48px,8vw,96px) 24px;">
     <div style="max-width:1280px;margin:0 auto;display:flex;flex-wrap:wrap;gap:56px;">
       <div style="flex:1 1 380px;min-width:280px;position:relative;">
-        <div style="position:absolute;top:-20px;right:-140px;width:220px;height:220px;background-image:radial-gradient(rgba(252,102,32,0.35) 2px, transparent 2px);background-size:18px 18px;opacity:0.7;z-index:0;"></div>
+        <div class="bds-contact-dots" style="position:absolute;top:-20px;right:-140px;width:220px;height:220px;background-image:radial-gradient(rgba(252,102,32,0.35) 2px, transparent 2px);background-size:18px 18px;opacity:0.7;z-index:0;"></div>
         <div style="position:relative;z-index:1;">
           <div style="display:flex;align-items:center;gap:10px;margin-bottom:16px;">
             <span style="width:22px;height:2px;background:#FC6620;"></span>
@@ -642,13 +603,13 @@
     </div>
   </section>
 
-  <section style="position:relative;background:#F7F7F7;padding:clamp(48px,8vw,88px) 24px 0;">
+  <section style="position:relative;background:#F7F7F7;padding:clamp(48px,8vw,88px) 24px 0;overflow:hidden;">
+    <div class="bds-footer-orange-shape" style="position:absolute;top:0;left:0;width:clamp(200px,26vw,360px);height:100%;background:#FC6620;clip-path:polygon(0 0,70% 0,100% 100%,0 100%);"></div>
     <div style="max-width:1280px;margin:0 auto;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:32px;position:relative;">
       <div style="flex:1 1 340px;min-width:260px;display:flex;justify-content:center;align-self:flex-end;position:relative;z-index:2;">
-        <div style="position:absolute;top:9%;left:0;width:66%;height:84%;background:#FC6620;clip-path:polygon(0 0,70% 0,100% 100%,0 100%);z-index:-1;"></div>
         <img src="uploads/bennetts-images/36_cta_footer_car_student.png" alt="Student celebrating a pass in front of a Bennetts branded car" loading="lazy" style="display:block;width:100%;max-width:600px;height:auto;object-fit:contain;" />
       </div>
-      <div style="flex:1 1 340px;min-width:280px;text-align:right;padding-bottom:clamp(48px,8vw,88px);">
+      <div class="bds-footer-cta-text" style="flex:1 1 340px;min-width:280px;text-align:right;padding-bottom:clamp(48px,8vw,88px);">
         <h2 style="font-family:'Inter',sans-serif;font-weight:800;font-size:clamp(26px,3.6vw,38px);line-height:1.25;margin:0 0 16px;color:#111218;">Book Your First Driving Lesson Today</h2>
         <p style="font-size:16px;line-height:1.7;color:#66666C;margin:0 0 26px;max-width:420px;margin-left:auto;">Pick a time that works for you and we'll pair you with an instructor and car near you. No deposit needed to book your first lesson.</p>
         <a href="#contact" style="display:inline-flex;align-items:center;justify-content:center;background:#FC6620;color:#111218;font-weight:700;font-size:15px;height:58px;padding:0 44px;border-radius:3px;">Book Now</a>
@@ -727,7 +688,8 @@
   &quot;showMobileActionBar&quot;: { &quot;editor&quot;: &quot;boolean&quot;, &quot;default&quot;: true, &quot;tsType&quot;: &quot;boolean&quot;, &quot;section&quot;: &quot;Layout&quot; }
 }">
 class Component extends DCLogic {
-  state = { mobileOpen: false, isMobile: false, scrolled: false, ctaParallaxOffset: -10, servicesSlide: 0, servicesCardWidth: 280, faqOpenIndex: 0 };
+  state = { mobileOpen: false, isMobile: false, scrolled: false, ctaParallaxOffset: -10, servicesSlide: 0, servicesCardWidth: 280, servicesCardsPerView: 4, faqOpenIndex: 0 };
+  servicesTotal = 8;
 
   componentDidMount() {
     this.checkWidth();
@@ -749,16 +711,22 @@ class Component extends DCLogic {
   measureServicesWidth = () => {
     const el = document.getElementById('bds-services-viewport');
     if (!el) return;
+    const width = window.innerWidth;
+    const cardsPerView = width < 640 ? 1 : width < 1024 ? 2 : 4;
     const gap = 24;
-    const cardWidth = (el.clientWidth - gap * 3) / 4;
-    if (cardWidth > 0 && Math.abs(cardWidth - this.state.servicesCardWidth) > 0.5) {
-      this.setState({ servicesCardWidth: cardWidth });
-    }
+    const cardWidth = (el.clientWidth - gap * (cardsPerView - 1)) / cardsPerView;
+    const maxSlide = Math.max(0, this.servicesTotal - cardsPerView);
+    const nextSlide = Math.min(this.state.servicesSlide, maxSlide);
+    const patch = {};
+    if (cardWidth > 0 && Math.abs(cardWidth - this.state.servicesCardWidth) > 0.5) patch.servicesCardWidth = cardWidth;
+    if (cardsPerView !== this.state.servicesCardsPerView) patch.servicesCardsPerView = cardsPerView;
+    if (nextSlide !== this.state.servicesSlide) patch.servicesSlide = nextSlide;
+    if (Object.keys(patch).length) this.setState(patch);
   };
   startServicesAutoplay = () => {
     this.stopServicesAutoplay();
     this.servicesInterval = window.setInterval(() => {
-      this.setState(s => ({ servicesSlide: s.servicesSlide >= 4 ? 0 : s.servicesSlide + 1 }));
+      this.setState(s => { const max = Math.max(0, this.servicesTotal - s.servicesCardsPerView); return { servicesSlide: s.servicesSlide >= max ? 0 : s.servicesSlide + 1 }; });
     }, 2800);
   };
   stopServicesAutoplay = () => {
@@ -853,8 +821,8 @@ class Component extends DCLogic {
       toggleMobile: () => this.setState(s => ({ mobileOpen: !s.mobileOpen })),
       closeMobile: () => this.setState({ mobileOpen: false }),
       servicesSlide: this.state.servicesSlide,
-      servicesPrev: () => { this.setState(s => ({ servicesSlide: s.servicesSlide <= 0 ? 4 : s.servicesSlide - 1 })); this.startServicesAutoplay(); },
-      servicesNext: () => { this.setState(s => ({ servicesSlide: s.servicesSlide >= 4 ? 0 : s.servicesSlide + 1 })); this.startServicesAutoplay(); },
+      servicesPrev: () => { this.setState(s => { const max = Math.max(0, this.servicesTotal - s.servicesCardsPerView); return { servicesSlide: s.servicesSlide <= 0 ? max : s.servicesSlide - 1 }; }); this.startServicesAutoplay(); },
+      servicesNext: () => { this.setState(s => { const max = Math.max(0, this.servicesTotal - s.servicesCardsPerView); return { servicesSlide: s.servicesSlide >= max ? 0 : s.servicesSlide + 1 }; }); this.startServicesAutoplay(); },
       servicesTrackStyle: { display: 'flex', gap: '24px', transition: 'transform 0.4s ease', transform: `translateX(-${this.state.servicesSlide * (this.state.servicesCardWidth + 24)}px)` },
       servicesCardStyle: { display: 'block', textDecoration: 'none', color: 'inherit', flex: `0 0 ${this.state.servicesCardWidth}px`, width: `${this.state.servicesCardWidth}px`, background: '#fff', border: '1px solid #E6E6E8', borderRadius: '3px', boxShadow: '0 6px 18px rgba(17,18,24,0.04)', overflow: 'hidden' },
       servicesPrevBtnStyle: { width: '52px', height: '52px', borderRadius: '50%', border: '1px solid #E6E6E8', background: '#fff', display: 'inline-flex', alignItems: 'center', justifyContent: 'center', cursor: 'pointer' },
